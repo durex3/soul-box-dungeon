@@ -32,14 +32,14 @@ class LayerTests(unittest.TestCase):
         bad = ['Input.is_action_pressed("a")', 'Time.get_ticks_msec()', 'OS.get_name()',
                'FileAccess.open("x", 1)', 'get_tree()', 'signal changed',
                'changed.emit()', 'changed.connect(f)', 'emit_signal("changed")',
-               'randf()', 'randi()', 'randf_range(0, 1)', 'randi_range(0, 1)', 'randomize()']
+               'randf()', 'randi()', 'randf_range(0, 1)', 'randi_range(0, 1)', 'randomize()', 'rng.randomize()']
         for expression in bad:
             with self.subTest(expression=expression):
                 self.assertTrue(self.check(expression))
                 self.assertFalse(self.check('# ' + expression))
                 self.assertFalse(self.check('var text: String = ' + repr(expression)))
         for good in ('rng.randf()', 'rng.randi()', 'rng.randf_range(0,1)', 'rng.randi_range(0,1)',
-                     'rng.randomize()', 'RandomNumberGenerator.randf()', 'rng. randf()',
+                     'RandomNumberGenerator.randf()', 'rng. randf()',
                      'my_randf()', 'my_get_tree()', 'InputMap.action_add_event("x", event)',
                      'SomeFileAccess.open()', 'var signal_name: String = "x"'):
             with self.subTest(good=good):
@@ -67,3 +67,33 @@ class LayerTests(unittest.TestCase):
         self.assertFalse(self.check('extends Node\nInput.foo()', 'app'))
         self.assertFalse(self.check('extends Node\nInput.foo()', 'tests'))
         self.assertFalse(self.check('extends RefCounted\n# Input.foo()'))
+
+
+    def test_rng_creation_path_exception(self):
+        source = 'var r: RandomNumberGenerator = RandomNumberGenerator.new()'
+        errors = self.check(source)
+        self.assertEqual(len(errors), 1)
+        self.assertIn(':1: 随机数生成器只能在 RunRng 里创建', errors[0])
+        self.assertFalse(self.check('', extras={'sim/core/run_rng.gd': source}))
+        self.assertTrue(self.check('class_name RunRng\n' + source))
+        self.assertTrue(self.check('', extras={'sim/other/run_rng.gd': source}))
+        self.assertTrue(self.check('', extras={'sim/core/run_rng_copy.gd': source}))
+        self.assertFalse(self.check('# ' + source))
+        self.assertFalse(self.check('var text: String = "RandomNumberGenerator.new()"'))
+        self.assertFalse(self.check(source, 'data'))
+
+    def test_rng_whitespace_and_word_boundaries(self):
+        self.assertTrue(self.check('RandomNumberGenerator . new ( )'))
+        self.assertTrue(self.check('RandomNumberGenerator.\nnew()'))
+        self.assertTrue(self.check('rng. randomize ( )'))
+        self.assertTrue(self.check('randomize ()'))
+        self.assertFalse(self.check('OtherRandomNumberGenerator.new()'))
+        self.assertFalse(self.check('rng.my_randomize()'))
+        self.assertFalse(self.check('var text: String = "rng.randomize()"'))
+
+    def test_randomize_has_no_path_exception(self):
+        for source in ('randomize()', 'rng.randomize()'):
+            with self.subTest(source=source):
+                self.assertTrue(self.check('', extras={'sim/core/run_rng.gd': source}))
+                self.assertFalse(self.check(source, 'data'))
+                self.assertFalse(self.check('# ' + source))
