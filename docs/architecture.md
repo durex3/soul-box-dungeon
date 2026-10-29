@@ -134,7 +134,12 @@ func _process(delta: float) -> void:
 
 ### 4.6 确定性规则
 
-1. 模拟层只用 `RunRng` 的子流取随机数
+1. 模拟层只用 `RunRng` 的子流取随机数。
+   - 禁止直接调用全局 `randf()`、`randi()`、`randf_range()`、`randi_range()`、`randfn()`、`seed()`、`rand_from_seed()`。成员形式的 `rng.randfn()` 等子流取数仍合法。`rand_from_seed()` 虽然显式传入种子，仍禁止作为绕过统一随机入口的替代来源。
+   - 禁止任意接收者的 `.shuffle()`、`.pick_random()`；静态检查不推断接收者类型，模拟层不要定义同名方法。需要随机打乱或抽取时，由使用它的任务设计通过子流实现的接口。
+   - 禁止 `randomize()`，包括成员调用，无路径例外。
+   - 只有精确路径 `sim/core/run_rng.gd` 可以 `RandomNumberGenerator.new()`，或把内置类 `RandomNumberGenerator` 直接赋给变量/常量（`= RandomNumberGenerator`、`:= RandomNumberGenerator`）。其他模拟层文件允许类型注解，禁止这些创建和类别名写法。按路径判断，不按 `class_name`。
+   - 上述是静态检查约定，忽略注释和字符串正文；不要求追踪任意动态反射、容器传递和跨文件别名。
 2. 不读系统时间、帧号、窗口大小和设置项。影响玩法的选项（比如危险等级）在开局时作为参数传入
 3. 实体列表用数组，按 `entity_id` 从小到大更新。要删除的实体在帧末统一删，不在遍历中删
 4. `Dictionary` 只用在键的插入顺序确定的地方
