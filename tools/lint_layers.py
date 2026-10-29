@@ -13,7 +13,7 @@ FORBIDDEN = [
     (r'\bsignal\s+\w+', '禁止声明 signal'),
     (r'\.\s*(?:emit|connect)\s*\(', '禁止发送或连接信号'),
     (r'\bemit_signal\s*\(', '禁止使用 emit_signal'),
-    (r'(?<![\w.])(?:randf|randi|randf_range|randi_range)\s*\(', '禁止使用全局随机函数'),
+    (r'(?<![\w.])(?:randf|randi|randf_range|randi_range|randfn|seed|rand_from_seed)\s*\(', '禁止使用全局随机函数'),
 ]
 
 
@@ -57,11 +57,18 @@ def lint(root: Path) -> list[str]:
                     if '全局随机' in rule and code[:match.start()].rstrip().endswith('.'):
                         continue
                     report(match.start(), rule)
+            for match in re.finditer(r'\.\s*(?:shuffle|pick_random)\s*\(', code):
+                report(match.start(), '禁止数组随机方法：必须通过 RunRng 子流实现')
             for match in re.finditer(r'\brandomize\s*\(', code):
                 report(match.start(), '禁止 randomize()：系统时间种子会破坏确定性')
             if path.relative_to(root).as_posix() != 'sim/core/run_rng.gd':
                 for match in re.finditer(r'\bRandomNumberGenerator\s*\.\s*new\s*\(', code):
                     report(match.start(), '随机数生成器只能在 RunRng 里创建')
+                # 只识别直接赋值，不追踪容器、参数或跨文件传递。
+                # 排除比较运算和 .new()，后者由已有创建规则单独诊断。
+                alias_pattern = r'(?<![=!<>:+*/%&|^~-])(?::=|=)(?!=)\s*RandomNumberGenerator\b(?!\s*\.)'
+                for match in re.finditer(alias_pattern, code):
+                    report(match.start(), '禁止生成器类别名赋值：随机入口必须由 RunRng 管理')
         forbidden = ('view', 'app') if is_sim else ('sim', 'view', 'app')
         for match in re.finditer(r'res://(?:' + '|'.join(forbidden) + r')/', no_comments):
             report(match.start(), '禁止引用上层资源 ' + match.group())
