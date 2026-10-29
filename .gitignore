@@ -1,0 +1,16 @@
+# Godot
+.godot/
+*.import.tmp
+build/
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 本机密钥（PixelLab 令牌等），不进版本库
+.env
+*.local
