@@ -22,3 +22,23 @@
 ```
 
 默认逻辑画布为 640×360，窗口为 1920×1080，使用整数倍缩放。
+
+## 运行测试
+
+在仓库根目录执行：
+
+```bash
+python3 tools/run_tests.py
+```
+
+依次运行 Python 工具测试、分层检查、Godot 无界面导入和 GDScript 测试。全部通过时退出码为 0，最后一行是 `TESTS: N passed, 0 failed`（N > 0）；任一步失败即停止，退出码为 1。
+
+`GODOT_BIN` 可指定 Godot 可执行文件，默认是 `/Applications/Godot.app/Contents/MacOS/Godot`。例如：
+
+```bash
+GODOT_BIN=/path/to/Godot python3 tools/run_tests.py
+```
+
+失败时先看 `STEP N FAIL` 的原因和此前的输出：断言失败显示 `FAIL 文件::方法`；脚本错误显示错误行及此前最近的 `RUN 文件::方法`；分层违规显示 `文件:行号:规则说明`。即使 Godot 退出码为 0 或打印了通过汇总，脚本错误输出仍会使整次检查失败。
+
+导入限时 120 秒，Godot 测试限时 300 秒。可用 `python3 tools/run_tests.py --timeout 20` 缩短测试阶段限时；超时会结束 Godot 子进程并报告失败。
