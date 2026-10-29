@@ -13,7 +13,7 @@ FORBIDDEN = [
     (r'\bsignal\s+\w+', '禁止声明 signal'),
     (r'\.\s*(?:emit|connect)\s*\(', '禁止发送或连接信号'),
     (r'\bemit_signal\s*\(', '禁止使用 emit_signal'),
-    (r'(?<![\w.])(?:randf|randi|randf_range|randi_range|randomize)\s*\(', '禁止使用全局随机函数'),
+    (r'(?<![\w.])(?:randf|randi|randf_range|randi_range)\s*\(', '禁止使用全局随机函数'),
 ]
 
 
@@ -57,6 +57,11 @@ def lint(root: Path) -> list[str]:
                     if '全局随机' in rule and code[:match.start()].rstrip().endswith('.'):
                         continue
                     report(match.start(), rule)
+            for match in re.finditer(r'\brandomize\s*\(', code):
+                report(match.start(), '禁止 randomize()：系统时间种子会破坏确定性')
+            if path.relative_to(root).as_posix() != 'sim/core/run_rng.gd':
+                for match in re.finditer(r'\bRandomNumberGenerator\s*\.\s*new\s*\(', code):
+                    report(match.start(), '随机数生成器只能在 RunRng 里创建')
         forbidden = ('view', 'app') if is_sim else ('sim', 'view', 'app')
         for match in re.finditer(r'res://(?:' + '|'.join(forbidden) + r')/', no_comments):
             report(match.start(), '禁止引用上层资源 ' + match.group())
