@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://view/battle/node_pool.gd" id="1_pool"]
+
+[node name="NodePool" type="Node"]
+script = ExtResource("1_pool")
