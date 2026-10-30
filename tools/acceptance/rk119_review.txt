@@ -1,0 +1,61 @@
+RK-119 图形验收记录（2026-10-30，Godot 4.7.2，macOS）
+
+打开方式（仓库根目录）：
+  /Applications/Godot.app/Contents/MacOS/Godot --path game res://app/dev/asset_review_lab.tscn
+也可在编辑器打开场景后按 F6。不要更改工程主场景。
+长时间人工查看可自行退出；自动验收包装器的每个 Godot 进程均限时 45 秒。
+
+UI 操作路径：
+1. 右侧类别选玩家，对象选 player/knight，动作选 run。观察 83ms/帧（0基帧号）。
+   暂停后等待1秒；下一帧/上一帧自动暂停且各走一帧；首帧回0。
+   循环打开：首帧按上一帧到末帧，再播放，能回首帧。
+   关闭循环后在末帧播放，会停在末帧。倍速依次选0.25、0.5、1、2。
+   空格播放/暂停，左右键单步，Home首帧；输入框编辑、下拉菜单打开时保留原控件键盘行为。
+2. 切 enemy/charge_boar，保留兼容run且重置0帧；切 soul/fireball、T4，显示单帧。
+   T1画布6主体6、T2画布8主体8、T3画布10主体8/pivot(6,5)、T4画布12主体10/pivot(6,6)。
+3. 右栏可滚动。三种背景、三种材质均能选择。勾选画布/主体/pivot/基线及展示靶。
+   无主体数据时侧栏显示不可用；碰撞/攻击范围、特效始终标明不可用/未接入。
+4. 隐藏名称后只见编号，勾选“侧栏显示编号答案”只在侧栏揭示；预览仍保持编号。
+   选择标签类别，七个8×8图标逐一渲染，可在1倍区查看。
+5. 点“导出当前画面”，输出到 user://review/，控制台打印绝对路径、JSON、帧号、速度。
+   截图需要人判断，不输出自动剪影通过。1倍和3倍的对照应使用同一暂停帧及灰底并关参考线。
+
+复查命令：
+  python3 tools/run_tests.py
+  python3 tools/art_check.py
+  python3 tools/acceptance/rk119_verify.py
+  python3 tools/acceptance/rk119_ui_verify.py
+  python3 tools/acceptance/rk119_faults.py
+支持 GODOT_BIN；smoke包装器不依赖启动目录且先导入、扫描错误及唯一标记。
+图形复查需正常桌面会话并先运行smoke导入；不会退化成headless冒充视觉验收。
+faults会临时改动骑士run JSON及本任务脚本，在finally恢复完整原始字节；请勿并行编辑这些文件。
+
+实际结果：
+- 完整测试：43项Python、140项Godot通过，层级检查通过。
+- art_check：共96个，通过96个，不通过0个。
+- smoke：96 resources, 36 animated, 60 static；RK119: passed。
+- 图形进程真实鼠标事件命中播放/暂停、上/下帧、首帧、循环、展示选项和导出按钮；
+  键盘事件检验左右/Home/Space；下拉选项通过标准控件select/item_selected驱动。
+  CUA桌面服务启动失败，因此未将这次结果声称为人工物理鼠标操作。
+- 暂停1秒、严格单步、循环首末帧、非循环末帧停止、四档速度、单帧T4、七标签、
+  名称隐藏/侧栏答案均通过；640×360及1280×720窗口内底部主要控件全部可见。
+- 真实视口同帧图像逐像素对照：1x/3x exact 3x3 pixel blocks (0 mismatches)。
+- 临时x=99999：显示 chr_knight_run.json 和 frames[0].frame 越界或非整数矩形，停止播放。
+  缺pivot、缺PNG、坏JSON也显示具体错误；其他资源可选。恢复后重新打开通过。
+- 下一帧临时接为_toggle_play：出现 RK119 UI FAIL next advances exactly one and pauses，
+  图形复查退出1；恢复后 RK119_INTERACT: passed。
+  RK119_FAULTS: passed; exact original bytes restored。
+- Release入口静态检查：_ready先检查OS.is_debug_build，非debug不构建UI、不读目录、不处理输入；
+  boot/正式菜单/project.godot没有本任务改动。未制作或声称运行release导出包。
+
+实际运行截图（从工具自身user://review/输出原样复制，未重绘）：
+  rk119_review.png：640×360，骑士run第0帧，原色/区域1网格，顶部对象动作特效选项。
+  rk119_gray.png：同帧灰度/灰底。
+  rk119_silhouette.png：同帧纯黑剪影/灰底，排除固定投影。
+控制台实际输出样例：
+  RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-30T14-20-18_3232.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+
+范围检查：
+  不修改生产PNG/JSON、Aseprite、art/ai_raw、docs、boot或玩法。
+  用户原有project.godot和三份RK-073 JSON格式改动保留且不纳入提交。
+  不安装依赖；全部Python只使用标准库。GDD无出入。
