@@ -18,6 +18,16 @@ var _status: Label
 func _ready() -> void:
 	if not OS.is_debug_build():
 		return
+	# 随项目交付，禁用系统回退；避免不同机器/冷启动的中文覆盖差异。
+	var font: FontFile = preload("res://assets/fonts/fusion-pixel-12px-zh_hans.woff2")
+	font.allow_system_fallback = false
+	font.antialiasing = TextServer.FONT_ANTIALIASING_NONE
+	font.subpixel_positioning = TextServer.SUBPIXEL_POSITIONING_DISABLED
+	font.hinting = TextServer.HINTING_NONE
+	font.oversampling = 1.0
+	theme = Theme.new()
+	theme.default_font = font
+	theme.default_font_size = 12
 	viewport = SubViewport.new()
 	viewport.size = Vector2i(160, 80)
 	viewport.transparent_bg = true
@@ -49,7 +59,7 @@ func _ready() -> void:
 	add_child(row)
 	for key: String in ["Size", "Alpha", "Cover", "Order", "Borrow", "Return", "Pause"]:
 		var button: Button = Button.new()
-		button.add_theme_font_size_override("font_size", 11)
+		button.add_theme_font_size_override("font_size", 12)
 		controls[key] = button
 		row.add_child(button)
 	(controls["Size"] as Button).pressed.connect(func() -> void:

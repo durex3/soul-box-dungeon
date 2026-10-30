@@ -103,6 +103,12 @@ def main():
         out.mkdir(parents=True, exist_ok=True)
         run(['-s', str(Path(__file__).with_name('rk045_probe.gd')), '--', str(out)], 'RK045_GRAPHICS: passed', True)
         check_pixels(out)
+        (out / 'font-negative').mkdir(parents=True, exist_ok=True)
+        run(['-s', str(Path(__file__).with_name('rk045_probe.gd')), '--', str(out / 'font-negative'), '--negative-font'],
+            'RK045_FONT_NEGATIVE: passed', True)
+        for scene in ('rk119', 'rk012'):
+            run(['-s', str(Path(__file__).with_name('rk045_font_audit.gd')), '--', scene, str(out)],
+                'RK045_FONT_AUDIT: passed', True)
         for kind in ('5', '33', 'inactive'):
             error = 'ERROR: EnemyProjectileView.present: ' + ('inactive' if kind == 'inactive' else 'invalid diameter')
             run(['-s', str(Path(__file__).with_name('rk045_negative.gd')), '--', kind], 'RK045_NEGATIVE: passed', expected_error=error)

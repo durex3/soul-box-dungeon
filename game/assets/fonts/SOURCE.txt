@@ -1,0 +1,33 @@
+RK-045 字体返修引入；仅本任务检查场景显式绑定，未设置项目全局Theme。
+
+字体：Fusion Pixel Font / 缝合像素字体，12px monospaced zh_hans
+作者/版权：Copyright (c) 2022, TakWolf (https://takwolf.com).
+上游：https://github.com/TakWolf/fusion-pixel-font
+固定发行版：2026.10.25
+官方下载包：
+https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.10.25/fusion-pixel-font-12px-monospaced-otf.woff2-v2026.10.25.zip
+包内原文件：fusion-pixel-12px-monospaced-zh_hans.otf.woff2
+本地文件：fusion-pixel-12px-zh_hans.woff2（仅缩短文件名，字体数据及内部名称未修改）
+大小：684752 bytes
+SHA256：1cd966a06a28c648f3a47d0147d259d9daa4b01572aac6cef418999f28755ecf
+原始包条目CRC32已核对；未子集化、重画、转换或安装系统字体。
+
+授权：SIL Open Font License 1.1，允许随软件捆绑/嵌入/再分发，保留版权和许可，
+字体不得单独销售，派生字体继续遵守OFL及保留名称条款。
+本目录fusion-pixel-license/完整保留同一官方发行包中的OFL.txt和全部上游许可：
+Ark Pixel / Cubic 11 / Galmuri。字体授权与项目代码授权各自独立，不重新许可字体。
+许可原文及版权通知随字体一并交付，不只引用URL。
+
+选择依据：style-bible 10.3推荐Ark Pixel；其官方README说明字体仍缺大量字符，
+并推荐Fusion Pixel作为10/12px临时过渡方案。Fusion以Ark字形/度量为基础补齐字形，
+本次选择12px简体版，而非依赖操作系统回退。
+https://github.com/TakWolf/ark-pixel-font
+https://github.com/TakWolf/fusion-pixel-font#许可证
+
+显示约定：本场景所有按钮和状态正文12px（style-bible正文档），无抗锯齿、
+无hinting/子像素定位，oversampling=1；导入元数据与场景代码均关闭system fallback。
+实际覆盖证据：rk045_text_check.gd逐个检查真正生效的FontFile、has_char、
+12px字号、文本尺寸及控件几何；冷启动/每次UI操作覆盖22个文本状态、74个可打印码位。
+包括“添加序 敌弹先/我方先”、满池/归还/暂停状态及全部预设直径、透明度。
+卸除Theme后，同一检查明确捕获U+654C“敌”缺字；不以UTF-8字符串或MCP无错误作覆盖依据。
+实际截图与完整返修记录见tools/acceptance/rk045_results.txt追加部分。
