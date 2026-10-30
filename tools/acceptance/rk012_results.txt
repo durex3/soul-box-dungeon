@@ -1,0 +1,57 @@
+RK-012 开发自检记录，2026-10-30，Godot 4.7.2 official / macOS / Apple M1。
+
+场景：
+  /Applications/Godot.app/Contents/MacOS/Godot --path game res://app/dev/player_movement_lab.tscn
+也可编辑器打开后F6。WASD/左摇杆移动，0/+50%按钮重建Sim并reset正式驱动。
+固定Camera2D居中竞技场，不跟随；release不构建验收界面、不添加正式入口。
+玩家用生产骑士idle第0帧、元数据pivot显示，逻辑位置不取整，模拟半径8。
+生产移动Input仅在InputCollector读取；每个固定逻辑步采样一次。
+project.godot仅追加move_left/right/up/down，物理ADWS及device=-1左轴，死区0.2。
+
+python3 tools/run_tests.py：46项Python、153项Godot通过，LAYERS: passed。
+game/tests/sim/test_player_movement.gd按任务顺序：
+1 test_initial_state_and_isolation：中心(640,360)、半径8、零输入、两实例隔离及输入不改写通过。
+2 test_axis_distance_and_bonus：四轴60步，0/+0.5为64/96±0.01px通过。
+3 test_diagonal_and_analog_magnitude：四斜向、(3,4)限幅64px、半幅32px、零输入通过。
+4 test_bonus_clamp：负/1/超1加成为64/128/128px通过。
+5 test_walls_corners_and_leave_wall：八方向各2400步，圆一直位于[40,40]—[1240,680]，
+  到达四边/四角允许相切，反向一步即离开，全程只调用Sim.step，不直接改state。
+6 test_deterministic_fractional_position：相同序列最终状态一致、保留逻辑小数通过。
+7 全量旧测试保留，未修改通用运行器或分层规则。
+
+python3 tools/acceptance/rk012_verify.py：退出0，唯一RK012: passed。
+Python3.9标准库，GODOT_BIN可配置，任意cwd，先导入，每个Godot进程45秒timeout，
+扫描ERROR:/SCRIPT ERROR/非零退出/唯一结果标记。
+正式FixedStepDriver启动预热0.2秒后reset并重建Sim，再计时1秒：
+fps  bonus   实际秒数   逻辑步数   最终位置                 距离px
+30   0.0     0.998147   60         (703.999,360)            63.9990234375
+30   0.5     1.030742   61         (737.5985,360)           97.5985107421875
+60   0.0     1.017414   60         (703.999,360)            63.9990234375
+60   0.5     1.000328   60         (735.9985,360)           95.99853515625
+每项与steps*Sim.DT*speed误差<0.01px，并符合64/96±2px。
+timer和帧调度存在一个逻辑步左右采样偏差，记录实际时间与步数，不伪称恰好60步。
+
+图形输入：实际InputEventKey物理键及InputEventJoypadMotion经InputMap、正式collector，
+每项恢复Sim并运行正式驱动，核对采集值、步数对应位移及PlayerView位置：
+D(1,0)、W+D斜向(0.707107,-0.707107)、A/D对向抵消、松开零输入；
+轴0.1死区输出(0,0)且不移动；轴0.6输出(0.5,0)、满轴(1,0)、双轴斜向限幅；
+轴归零后键盘S恢复(0,1)，各项通过。
+最终链路日志：steps=9，state=(640,369.6001)，view=(640,369.6001)。
+这些是合成摇杆轴事件；没有实物手柄，不声称真机手柄试玩。
+Godot实际截图已查看：/private/tmp/rk012-movement.png（640×360）。
+Godot MCP run_project启动该场景，get_debug_output记录Godot/OpenGL正常启动、errors=[]，
+随后stop_project停止；输入链路状态由图形探针另行读取，不把无错误启动等同于输入试玩。
+
+python3 tools/acceptance/rk012_faults.py：四项故意改坏均产生指定失败并退出1：
+- 取消limit_length：斜向距离90.50958而非64。
+- 去掉DT：正式轴向测试失败（距离偏差536px）。
+- 不调用边界clamp：长期移动范围检查失败。
+- collector强制normalized：0.6轴半推链路实际位移3.199951，预期1.6，检查失败。
+finally逐项恢复原字节，RK012_FAULTS: passed；随后全量回归和独立验证重跑通过。
+故障探针须先完成导入，不要和其他测试或编辑并发执行。
+
+改动范围：PlayerConfig、最小InputFrame/PlayerState/RunState/SimEvent及Sim.step、
+InputCollector、PlayerView和独立移动检查场景、测试及验收脚本。
+没有物理节点、惯性、镜头跟随、战斗/属性通用系统、空间哈希接入、旧资源修改、
+验收台改动或boot接入。没有更改已有固定步及边界算法、旧测试和docs。
+与GDD及任务说明出入：无。发现其他问题：无。
