@@ -28,7 +28,14 @@ func build(root: Control) -> Control:
 	var preview: Control = ReviewCanvas.new()
 	preview.custom_minimum_size = Vector2(280, 160)
 	preview.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	main.add_child(preview)
+	preview.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	var preview_scroll: ScrollContainer = ScrollContainer.new()
+	preview_scroll.custom_minimum_size = Vector2(280, 160)
+	preview_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	preview_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	preview_scroll.tooltip_text = "大图保持1×/3×；使用右侧/底部滚动条查看全部画布"
+	_register(main, "PreviewScroll", preview_scroll)
+	preview_scroll.add_child(preview)
 	var scroll: ScrollContainer = ScrollContainer.new()
 	scroll.custom_minimum_size.x = 214
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
@@ -37,7 +44,7 @@ func build(root: Control) -> Control:
 	side.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	scroll.add_child(side)
 	_label(side, "ObjectTitle", "对象 / 角色")
-	_choice(side, "Category", ["全部类别", "玩家", "普通敌人", "精英", "魂匣", "拾取物", "标签"])
+	_choice(side, "Category", ["全部类别", "玩家", "普通敌人", "精英", "魂匣", "拾取物", "标签", "Boss"])
 	var search: LineEdit = LineEdit.new()
 	search.placeholder_text = "按 id 筛选"
 	_register(side, "Search", search)

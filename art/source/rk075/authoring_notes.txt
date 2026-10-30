@@ -1,0 +1,22 @@
+RK-075 Boss 灰盒（原生源为最终来源）
+
+bos_gravekeeper.aseprite：64×64，朝右的竖直骨架、骨白头部、长柄弯镰。
+bos_furnace_colossus.aseprite：96×96，焦褐/暗铜重型躯干、重锤、暗炉口及小面积暖色炉条。
+两位均独立在目标网格选定几何坐标；未加载、缩放或倍乘旧普通敌人图/坐标。
+Body和Shadow为独立RGBA图层；master色板；alpha仅0/255。
+四帧：idle 0—1（167ms/帧），run 2—3（83ms/帧）。
+pivot分别(32,61)/(48,93)，各帧Body底线分别y=60/92。
+投影色#0B0A12只在Shadow，主体使用#1A1426描边。主体和武器不贴画布边缘。
+idle变化为轻微头身/武器起伏，run改变左右膝、足落点；不包含攻击、阶段或死亡。
+
+日常修改：在Aseprite编辑本目录两个.aseprite，然后执行：
+  python3 tools/build_rk075_assets.py
+可设置ASEPRITE_BIN，或用--output-dir导出到临时目录；每个子进程45秒限时。
+导出按真实标签切帧，1px全透明间隙，不缩放、不trim、不合并重复帧。
+导出脚本不调用绘制脚本，不重建、不覆盖源文件。
+draw_bosses.lua仅为首次作者几何记录，已有源时主动拒绝覆盖；无需在日常流程运行。
+
+验收：
+  python3 tools/acceptance/rk075_verify.py
+  python3 tools/acceptance/rk075_faults.py
+详见 tools/acceptance/rk075_review.txt。

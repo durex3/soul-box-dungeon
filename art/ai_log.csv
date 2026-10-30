@@ -95,3 +95,7 @@ ui_tag_mechanical.png,art/source/rk074/ui_tag_mechanical.aseprite,手绘,灰盒�
 ui_tag_undead.png,art/source/rk074/ui_tag_undead.aseprite,手绘,灰盒原生绘制，Aseprite 导出,,,2026-10-30,Codex,大量
 ui_tag_holy.png,art/source/rk074/ui_tag_holy.aseprite,手绘,灰盒原生绘制，Aseprite 导出,,,2026-10-30,Codex,大量
 ui_tag_melee.png,art/source/rk074/ui_tag_melee.aseprite,手绘,灰盒原生绘制，Aseprite 导出,,,2026-10-30,Codex,大量
+bos_gravekeeper_idle.png,art/source/rk075/bos_gravekeeper.aseprite,手绘,原生网格Boss几何灰盒，Aseprite标签导出,,,2026-10-30,Codex,大量
+bos_gravekeeper_run.png,art/source/rk075/bos_gravekeeper.aseprite,手绘,原生网格Boss几何灰盒，Aseprite标签导出,,,2026-10-30,Codex,大量
+bos_furnace_colossus_idle.png,art/source/rk075/bos_furnace_colossus.aseprite,手绘,原生网格Boss几何灰盒，Aseprite标签导出,,,2026-10-30,Codex,大量
+bos_furnace_colossus_run.png,art/source/rk075/bos_furnace_colossus.aseprite,手绘,原生网格Boss几何灰盒，Aseprite标签导出,,,2026-10-30,Codex,大量

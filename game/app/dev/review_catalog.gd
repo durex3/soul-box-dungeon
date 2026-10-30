@@ -2,7 +2,7 @@ class_name ReviewCatalog
 extends RefCounted
 ## 只读生产元数据目录；损坏条目仍可选，错误由验收台展示。
 
-const ROOTS: PackedStringArray = ["res://assets/sprites/greybox/rk073/", "res://assets/sprites/greybox/rk074/"]
+const ROOTS: PackedStringArray = ["res://assets/sprites/greybox/rk073/", "res://assets/sprites/greybox/rk074/", "res://assets/sprites/greybox/rk075/"]
 var entries: Array[Dictionary] = []
 
 ## 扫描正式 JSON，不依赖 art 源文件或导出清单。
@@ -45,8 +45,10 @@ func read_entry(entry: Dictionary) -> Dictionary:
 	var meta: Dictionary = data["meta"]
 	if not meta.get("image") is String or not meta.get("id") is String:
 		return _bad(path, "缺少 meta.image / meta.id 字符串")
-	if (path.contains("/rk073/") and not meta.get("action") is String) or (path.contains("/rk074/") and not meta.get("category") is String):
+	if ((path.contains("/rk073/") or path.contains("/rk075/")) and not meta.get("action") is String) or (path.contains("/rk074/") and not meta.get("category") is String):
 		return _bad(path, "缺少 meta.action / meta.category 分类字段")
+	if path.contains("/rk075/") and (meta.get("category") != "boss" or not meta.get("action") in ["idle", "run"]):
+		return _bad(path, "Boss category/action 缺失或无效")
 	if str(meta["id"]).is_empty():
 		return _bad(path, "meta.id 不能为空")
 	if meta.get("category", "") == "soul" and (not _number(meta.get("tier")) or not float(meta["tier"]) in [1.0, 2.0, 3.0, 4.0]):
@@ -84,7 +86,7 @@ func read_entry(entry: Dictionary) -> Dictionary:
 		var pivot: Vector2 = Vector2(frame["pivot"]["x"], frame["pivot"]["y"])
 		if pivot.x < 0 or pivot.y < 0 or pivot.x > rect.size.x or pivot.y > rect.size.y:
 			return _bad(path, "frames[%d].pivot 超出画布" % i)
-		var parsed: Dictionary = {"rect": rect, "pivot": pivot, "duration": float(frame["duration"]), "exclude_shadow": path.contains("/rk073/")}
+		var parsed: Dictionary = {"rect": rect, "pivot": pivot, "duration": float(frame["duration"]), "exclude_shadow": path.contains("/rk073/") or path.contains("/rk075/")}
 		if frame.has("body_rect"):
 			if not _numbers(frame["body_rect"], ["x", "y", "w", "h"]) or not _valid_rect(_rect(frame["body_rect"]), Rect2(Vector2.ZERO, rect.size)):
 				return _bad(path, "frames[%d].body_rect 缺失字段或越界" % i)
