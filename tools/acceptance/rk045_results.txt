@@ -72,3 +72,45 @@ python3 tools/acceptance/rk045_faults.py：
    故障探针运行前先执行verify导入；不要与其他测试/编辑并发执行临时变异。
 
 与任务说明/架构/GDD出入：无。发现的其他问题：无。
+
+2026-10-30 合并后复验退回的字体返修（本节取代前次“其他问题无”结论）：
+前次只验像素和字符串，漏查实际中文字形，导致“敌弹先”方框未被发现。
+已在恢复的rk-045分支执行git merge main，快进至ace6c06，不回滚已合并提交。
+
+对应退回记录：
+1/2. 冷启动“添加序 敌弹先”的缺字：本场景显式绑定随项目分发的FontFile和独立Theme，
+保留原中文，不换英文、不删标签、不隐藏按钮、不修改图片规避。已实际打开查看冷启动、
+两种添加序/满覆盖、归还、满池、暂停PNG，文字可读，无方框/截断/重叠。
+3. 字体使用官方Fusion Pixel 12px monospaced zh_hans，2026.10.25，SIL OFL 1.1；
+依据Ark官方缺字提示选择其推荐过渡方案。原字体数据未修改，完整主许可及三份上游许可
+随包提交；来源/版本/SHA256/授权约束见game/assets/fonts/SOURCE.txt。
+本场景正文和按钮统一12px，符合style-bible 10.3；导入和运行时均禁用系统回退、
+抗锯齿/子像素定位，未更改全局Theme或其他场景。
+4. 新增rk045_text_check.gd：检查实际生效的FontFile及每个字符has_char，不接受缺字回退；
+冷启动及每次UI事件后检查22个不同文字状态/74个可打印码位、字号、测量宽高、
+按钮互不重叠及控件完整在640×360内。日志font_texts.json保留全部实际检查文本。
+移除Theme的专用负向探针明确打印：
+  RK045 old font detected: missing glyph U+654C 敌 in 添加序 敌弹先
+  RK045_FONT_NEGATIVE: passed
+这证明新增覆盖检查能捕获此次问题，不只是确认字符串正确或MCP无错误。
+返修后另用Godot MCP启动场景、读取正常Godot/OpenGL输出及errors=[]并停止；
+字体显示结论仍以上述字形检查和实际截图为依据。
+全部原像素/层级/透明度/1倍3倍/池化断言保留，另重跑原四项故障自检并恢复原字节；
+随后完整回归46项Python、153项Godot通过，art_check 100/100，RK045: passed。
+实际Godot截图原样复制提交：
+  rk045_font_cold.png（冷启动）
+  rk045_font_enemy_first.png（12px、敌弹先、alpha1满覆盖）
+  rk045_font_ally_first.png（32px、我方先、alpha1满覆盖）
+  rk045_font_returned.png（归还/空闲计数）
+  rk045_font_full_pool.png（满池返回null）
+  rk045_font_paused.png（持续绘制按钮/暂停状态）
+完整56组循环图像仍在/private/tmp/rk045-checks/，七尺寸、四档alpha、两种添加序均检查。
+5. 只读审查RK119/RK012，没有修改其场景：
+  RK119：26个控件文字的主字体Open Sans SemiBold未覆盖中文/部分符号；
+  RK012：4个控件文字的主字体Open Sans SemiBold未覆盖中文。
+  当前本机冷启动截图未见明确方框，但两场景仍依赖系统回退，存在同类跨机器/冷启动风险，
+  不把本机暂时可读当作稳定覆盖。建议项目经理另开字体接入任务，不在本次越范围修改。
+  /private/tmp/rk045-checks/font_audit_rk119.png及.json
+  /private/tmp/rk045-checks/font_audit_rk012.png及.json
+  审查探针仅运行场景、读取Font.has_char并截图，不给它们替换字体或写生产文件。
+与文档出入：无（推荐字体不是唯一强制字体，本次按退回授权引入新字体并核对许可/覆盖）。
