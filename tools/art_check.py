@@ -80,6 +80,8 @@ def check_size(prefix, stem, w, h, pixels, greybox=False):
         return [f"地块图集的宽高应由 16×16 地块组成，实际 {w}×{h}"], 16, 1
 
     sizes = FRAME_SIZES[prefix]
+    if prefix == "box" and greybox:
+        sizes = sizes + [(12, 12)]
     found = strip_frames(w, h, sizes)
     if found is None:
         allowed = "、".join(f"{a}×{b}" for a, b in sizes)
