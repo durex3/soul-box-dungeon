@@ -1,0 +1,74 @@
+RK-045 开发自检记录（2026-10-30，Godot 4.7.2 official，macOS/Apple M1）
+
+场景：
+  Godot --path game res://app/dev/enemy_projectile_lab.tscn
+或编辑器单独F6。顶栏依次操作直径、我方透明度、满覆盖、添加顺序、借出/重借、归还、
+暂停持续绘制。没有弹道/寿命模拟；暂停停止持续刷新，选择改变时仍刷新一帧便于静看。
+容量1仅是检查夹具，不是生产弹体数量上限。敌弹根不缩放；3倍是验收工具的视口nearest显示。
+敌弹池和我方组同世界Canvas、兄弟节点，不给敌弹添加CanvasLayer。
+
+1. python3 tools/acceptance/rk045_verify.py退出0，唯一RK045: passed。
+   Python3.9标准库，支持GODOT_BIN及任意cwd；先导入，每个Godot子进程timeout=45秒；
+   非零、超时、ERROR:/SCRIPT ERROR、缺失/重复标记失败。
+   使用正式EnemyProjectileView/PooledView/NodePool，无实现副本。
+   实际图形输出到/private/tmp/rk045-checks/：
+   d{直径}_o{顺序}_a{透明度序号}_screen.png为640×360完整界面；
+   同名_world.png为160×80透明世界视口，供完整透明区域及像素掩码检查。
+   o0=敌弹先添加、我方后添加；o1=我方先添加。
+   a0/a1/a2/a3对应我方alpha=0/0.6/0.8/1。
+   共7尺寸×2顺序×4透明度=56组实际渲染图像对；未在Python重画图片。
+   原始逻辑位置(80.3,40.4)，显示中心round为(80,40)，原始值另存不改写。
+   6/8/9/10/12/16/32全部逐像素与Python独立math.hypot参考相同；
+   总宽高含圈层，9无深圈、10起有深圈，轴向圈宽各1px，alpha仅0/255；
+   基准图除掩码外所有像素真正透明，奇数直径像素中心偏0.5px符合定义。
+
+2. 满覆盖压力组整块覆盖160×80，含多层重叠#4F7BFF/#F0F0F0/#3DF2C5条带；
+   不使用敌弹三种颜色、不在敌弹周围留空。所有不透明敌弹像素与无覆盖基准精确相同，
+   两种添加顺序、四种alpha均通过。画布外(0,0)四档像素不同，alpha0透明，
+   其他alpha非透明，防止测试背景未绘制的假阳性。
+   BattleDrawOrder=0/400/700/800/900/1000；敌弹绝对z=800，
+   我方兄弟组绝对z=700，透明度只改该组。指挥信号/UI仍高于敌弹。
+   本任务仅证明组件和独立夹具，不声称约束尚未实现的正式全部特效。
+
+3. 逐帧实际screen图中，原尺寸每个像素对应3倍区完整3×3像素块；
+   整个d×d画布（含透明角）均检查，且主视口中的全部不透明像素也精确取色。
+   1倍世界画布原点：d6(77,37)、d8(76,36)、d9(76,36)、d10(75,35)、
+   d12(74,34)、d16(72,32)、d32(64,24)。
+   已打开查看d12无覆盖、d12满覆盖和d32反序满覆盖的640×360截图。
+   取色示例：d12_o0_a3_screen.png（满覆盖alpha1，坐标为PNG零基x/y）
+   1倍画布原点(78,82)，品红(84,88)=(255,46,151,255)，
+   白边(84,83)=(255,255,255,255)，外圈(84,82)=(42,6,20,255)。
+   3倍画布原点(378,150)，对应取色点(396,168)/(396,153)/(396,150)，RGBA分别完全相同。
+   世界视口对应中心(80,40)、白边(80,35)、外圈(80,34)；透明角为(74,34)。
+
+4. 真实树中1000轮同实例借还通过：容量/总数保持1，满池null；归还隐藏、active=false、
+   can_process=false，重借实体ID=-1、位置零、直径6、旋转0、scale1、全白modulate/
+   self_modulate、material=null。沿用正式池根/子树所有权协议，组件无独立CanvasLayer或处理子树。
+   真实按钮事件归还/重借通过；returned_world.png全部透明；
+   reborrow_world.png与6px基准逐像素一致，证明32px缩回6px重借没有残影。
+
+5. Godot MCP run_project启动独立场景，get_debug_output出现正常Godot/OpenGL启动输出、
+   errors=[]，随后stop_project成功；没有接boot或正式菜单，release不构建工具。
+   图形探针使用合成InputEventMouseMotion/InputEventMouseButton命中真实按钮，
+   循环尺寸、alpha和添加顺序，状态与捕获像素逐项一致；借还/满覆盖/暂停按钮也检查通过。
+   这是引擎输入分发，不称为物理鼠标或人工操作。没有用headless目录扫描替代图形检查。
+
+6. python3 tools/run_tests.py：46项Python、153项Godot通过，LAYERS: passed。
+   python3 tools/art_check.py：100/100通过。没有新增常规表现层测试、生产PNG或来源条目，
+   没有改旧源/PNG/JSON、sim/data、project.godot、boot、docs、NodePool或测试协议。
+
+专用负向子进程（其他进程严格拒绝任何引擎错误）：
+   直径5及33：各精确接纳一次ERROR: EnemyProjectileView.present: invalid diameter；
+   未借出present：精确接纳一次ERROR: EnemyProjectileView.present: inactive。
+   三项均检查entity_id、逻辑/显示位置、直径、可见/借出状态未改变，唯一RK045_NEGATIVE: passed。
+
+python3 tools/acceptance/rk045_faults.py：
+   d>=10变d>10：d10坐标(78,35)实际白色、预期深色，掩码检查失败。
+   品红改#FF2E96：d6坐标(79,38)实际(255,46,150)、预期(255,46,151)，检查失败。
+   敌弹z降到ALLY_FX-1：d6/o0/alpha0.6的不透明像素隔离检查失败。
+   我方alpha误同步给bullet.modulate.a：同样在alpha0.6的隔离检查失败。
+   所有变异finally恢复原字节，RK045_FAULTS: passed。
+   随后完整回归及独立图形验证重跑通过，未提交破坏内容。
+   故障探针运行前先执行verify导入；不要与其他测试/编辑并发执行临时变异。
+
+与任务说明/架构/GDD出入：无。发现的其他问题：无。
