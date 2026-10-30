@@ -1,0 +1,59 @@
+RK-007 开发自检与耗时记录（2026-10-30）
+环境：Apple M1，macOS 14.3.1，Godot 4.7.2-stable official，debug=true，headless。
+生产索引：64px固定桶，Vector2i键，ID→位置独立索引。查询枚举包围方框桶，
+距离平方<=r²精筛，最终有符号ID排序；不遍历所有实体、不重建网格。
+
+python3 tools/run_tests.py：退出0，46项Python、147项Godot通过，LAYERS: passed。
+test_spatial_hash.gd按任务顺序：
+1 test_index_lifecycle：空、增删/重复、同点多ID、0/负ID、清空复用通过。
+2 test_grid_lines_and_negative_coordinates：六个格线值的36种二维组合、小圆/零半径通过。
+3 test_circle_filter_and_boundaries：3-4-5相切、四象限、方框内圆外、零/负半径、多桶大圆通过。
+4 test_move_and_bucket_cleanup：同点/同桶/跨桶、±4096往返、删除重插和空桶清理通过。
+5 test_order_independence_and_result_copy：同一预生成夹具正序、逆序、删除重插三种历史，
+  故意乱序同桶ID，逐项升序结果及返回数组隔离通过。
+6 test_random_1000_points_100_queries：固定RunRng.new(20261030).spawn，1000点×100查询，
+  每次对独立逐点遍历保存点的完整升序ID列表，全部相同。
+7 test_mutated_fixture_and_crowded_clear：同步更新测试保存点，经移动/移除后再100次完整对照；
+  另测300点同坐标、clear后查询，通过。
+
+python3 tools/acceptance/rk007_faults.py：三项故意改坏均由指定测试断言捕获、进程退出1：
+- <=变<：test_circle_filter_and_boundaries预期[-11,-3,0,9,11]，实际[9]。
+- move漏位置更新：test_move_and_bucket_cleanup预期[42]，实际[]；后续清理也可能报脚本错误，
+  判定依据是指定测试已经产生FAIL，而非只依赖脚本错误。
+- 去排序：test_order_independence_and_result_copy预期[-3,0,2,9]，实际[9,-3,0,2]。
+finally恢复原始字节，RK007_FAULTS: passed。随后完整测试和独立验证重新通过。
+运行faults前先运行完整测试或verify完成导入；不要与其他测试/编辑并发执行变异。
+
+python3 tools/acceptance/rk007_verify.py：退出0，唯一RK007: passed。
+Python3.9标准库、支持GODOT_BIN和任意cwd、先导入、每个Godot进程45秒timeout，
+扫描非零退出、ERROR:/SCRIPT ERROR及唯一探针标记。
+固定种子20261030，300点，x=[32,1248]、y=[32,688]，100个预生成同范围查询中心，
+radius=112px。拥挤夹具全部位于(640,360)，复用完全相同的100个查询中心。
+各分布均先100次逐点参考核对，预热1000次，再测5批×10000次。
+计时仅包含查询（桶枚举、精筛、排序和返回数组）及累计结果数，不含生成、插入、
+日志或参考遍历。整批Time.get_ticks_usec，不使用单次时钟差作为性能结论。
+
+最终独立计时（未并发运行本项目测试），每行：整批µs / 平均单次µs
+uniform:
+  70617 / 7.0617
+  70503 / 7.0503
+  69979 / 6.9979
+  70759 / 7.0759
+  70728 / 7.0728
+  五批均值7.05172µs，最小批均值6.9979µs，最大批均值7.0759µs。
+  累计结果669630（包含预热）。
+crowded:
+  51473 / 5.1473
+  52305 / 5.2305
+  51532 / 5.1532
+  52288 / 5.2288
+  51544 / 5.1544
+  五批均值5.18284µs，最小批均值5.1473µs，最大批均值5.2305µs。
+  累计结果765000（包含预热）。
+拥挤分布只有部分查询圆覆盖聚集点，许多查询访问空桶，因此这不是“每次命中300点”
+的最坏情况耗时。记录反映指定查询序列，受本机负载影响，不设硬门槛，
+不宣称达到RK-010的整场60fps。
+
+范围：仅新增SpatialHash、测试及验收脚本/记录；无玩法/随机流/测试运行器/分层规则/
+docs/工程或美术更改。用户既有project.godot及三份RK073 JSON保留不提交。
+与文档/GDD出入：无。其他问题：无。
