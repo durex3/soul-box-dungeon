@@ -364,3 +364,7 @@ RK-015: 伤害公式
 ### RK-008 开工前参考（2026-10-30）
 
 独立 Godot 4.7.2 工程中，仅 hide() Node2D 后，INHERIT 子节点仍执行 `_process` 和 `_physics_process`（8 次 process_frame 等待区间观测 idle=7、physics=9）；将父节点 process_mode 设为 PROCESS_MODE_DISABLED 后，两类计数增量均为 0；恢复 INHERIT 后两类增量均为 8。仅隐藏不足以满足对象池归还停用要求，验收须在真实树中测量根及子节点的处理计数。具体帧数取决于调度，不作为固定断言。临时参考工程 `/private/tmp/rk008-reference/`，任务说明见已获负责人确认的 RK-008。
+
+### RK-075 开工前参考（2026-10-30）
+
+Godot4.7.2实际加载RK119验收台，640×360窗口中preview.size为410×260。默认pivot下64px素材3倍画布为Rect2(199,-20,192,192)，96px为Rect2(151,-116,288,288)，均不能完整落在预览区内。新增Boss灰盒时需大图查看适配，不能缩小生产素材。临时只读探针 `/private/tmp/rk075-view-reference.gd`；任务范围已获负责人确认，见RK075。
