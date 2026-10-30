@@ -1,7 +1,7 @@
 # 项目经理工作手册
 
 > 写给接手项目经理工作的人（或 AI 会话）。读完本文件，再读 `docs/status.md` 和最近一个任务说明，就能接着干
-> 最后更新：2026-10-30，RK-007 通过之后
+> 最后更新：2026-10-30，RK-012 任务确认之后
 
 ## 1. 分工和边界
 | 角色 | 由谁担任 | 做什么 | 不做什么 |
@@ -139,7 +139,7 @@ RK-0xx 被退回，意见在 docs/tasks/rk-0xx.md 末尾的验收记录里。按
 | 跑 Godot | 一律用 Python `subprocess.run(..., timeout=...)`，脚本出错时 Godot 可能不退出；macOS 没有 `timeout` 命令。新工作树先 `--headless --path game --import` |
 | Python | 3.9；工具只用标准库，项目经理验收可以用 Pillow 11.3.0 |
 | Godot MCP | `@coding-solo/godot-mcp@0.1.1`，按项目配在本机。换电脑重新装：`claude mcp add godot -e GODOT_PATH=/Applications/Godot.app/Contents/MacOS/Godot -- npx -y @coding-solo/godot-mcp@0.1.1` |
-| 版本库 | 只有本地 git，远程托管以后再定 |
+| 版本库 | GitHub：git@github.com:durex3/soul-box-dungeon.git；origin/main已配置，首次上传到b44dc45。后续推送按负责人交办执行 |
 | PixelLab | 负责人已付费，确认可以商用（style-bible 13.4 节）。令牌只放环境变量 |
 
 ## 10. 当前进度和待办（2026-10-30）
@@ -154,4 +154,4 @@ RK-0xx 被退回，意见在 docs/tasks/rk-0xx.md 末尾的验收记录里。按
 
 - RK-119 验收台已通过，提交 ca8ae17，合并 72d6fdd；43项Python/140项Godot、96/96美术检查、图形事件/像素与故障检查、Godot MCP额外检查通过。打开 game/app/dev/asset_review_lab.tscn 单独运行，未接入特效明确标示。
 - RK-075 通过，提交 f5c00aa，合并 25b1e93；两Boss原生灰盒、原尺寸剪影、1倍完整与3倍滚动、100/100美术检查、46项Python/140项Godot及旧资源回归通过。原有棋盘整数除法警告仍保留。
-- 第3批全部完成。RK-007空间哈希通过，提交1682f56，合并0b1546b；46项Python/147项Godot、独立参考/变异检查通过，300点查询复测均匀约7.05µs、拥挤序列约5.19µs（非最坏情况）。第4批剩RK-012/RK-045，优先准备RK-012玩家移动任务说明，确认后登记待开发。Godot MCP可启动场景并读取输出；图形交互验收使用进程输入事件和像素检查，CUA原生服务此前不可用。
+- 第3批全部完成。RK-007空间哈希通过，提交1682f56，合并0b1546b；46项Python/147项Godot、独立参考/变异检查通过，300点查询复测均匀约7.05µs、拥挤序列约5.19µs（非最坏情况）。第4批当前指定RK-012玩家移动待开发，任务说明及0.2死区、8px半径、最小Sim入口和可选初始加成已确认，依赖均通过；之后继续RK-045。Godot MCP可启动场景并读取输出；图形交互验收使用进程输入事件和像素检查，CUA原生服务此前不可用。

@@ -80,11 +80,13 @@ app ──→ view ──→ sim ──→ data
 
 | 方法 | 用途 | 何时调用 |
 |---|---|---|
-| `Sim.new(seed: int, character_id: StringName)` | 开一局 | 单局开始 |
+| `Sim.new(seed: int, character_id: StringName, initial_move_speed_bonus: float = 0.0)` | 开一局 | 单局开始 |
 | `step(input: InputFrame) -> Array[SimEvent]` | 推进 1 个逻辑帧 | 战斗中，每秒 60 次 |
 | `apply(cmd: Command) -> Array[SimEvent]` | 执行一次非战斗操作 | 商店、升级、熔炉、开始下一波 |
 
 一局的全部状态放在 `sim.state`（`RunState`）里。表现层可以读它，不能写它。
+
+RK-012已获负责人确认：先实现只含移动方向的InputFrame、PlayerState、只持有玩家的RunState和返回空类型化事件数组的step；SimEvent暂为最小类型，apply/Command由后续任务实现。构造时的可选初始移速加成沿用小数比例（0.5=+50%），不提供表现层直接写状态的接口。移动输入径向死区0.2，灰盒玩家半径8px，规格见任务说明。
 
 ```
 玩家输入 ─→ InputFrame ─→ Sim.step()  ─→ RunState 更新
@@ -364,6 +366,10 @@ RK-015: 伤害公式
 ### RK-008 开工前参考（2026-10-30）
 
 独立 Godot 4.7.2 工程中，仅 hide() Node2D 后，INHERIT 子节点仍执行 `_process` 和 `_physics_process`（8 次 process_frame 等待区间观测 idle=7、physics=9）；将父节点 process_mode 设为 PROCESS_MODE_DISABLED 后，两类计数增量均为 0；恢复 INHERIT 后两类增量均为 8。仅隐藏不足以满足对象池归还停用要求，验收须在真实树中测量根及子节点的处理计数。具体帧数取决于调度，不作为固定断言。临时参考工程 `/private/tmp/rk008-reference/`，任务说明见已获负责人确认的 RK-008。
+
+### RK-012 开工前参考（2026-10-30）
+
+独立Godot4.7.2参考工程 `/private/tmp/rk012-reference/` 验证：60次按1/60秒累计，64px/s轴向距离63.9999809px，向量(1,1)限长后距离63.9999809px；+50%轴向95.9999466px，半幅输入31.9999905px。Input.get_vector显式径向死区0.2时，动作强度0.1输出零、0.6输出(0.5,0)。测试应保留模拟幅度和逻辑小数，允许0.01px累计误差。参考探针的加成使用百分数换算；任务生产接口沿用Balance的小数比例0.5=+50%。RK-012任务说明及构造器可选参数等限定已获负责人确认。
 
 ### RK-007 开工前参考（2026-10-30）
 
