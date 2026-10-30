@@ -1,0 +1,653 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "file": "chr_knight_idle.png",
+      "id": "knight",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "ally",
+      "source": "art/source/rk073/chr_knight.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "chr_knight_run.png",
+      "id": "knight",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "ally",
+      "source": "art/source/rk073/chr_knight.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "chr_alchemist_idle.png",
+      "id": "alchemist",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "ally",
+      "source": "art/source/rk073/chr_alchemist.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "chr_alchemist_run.png",
+      "id": "alchemist",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "ally",
+      "source": "art/source/rk073/chr_alchemist.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_skeleton_rat_idle.png",
+      "id": "skeleton_rat",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_skeleton_rat.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_skeleton_rat_run.png",
+      "id": "skeleton_rat",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_skeleton_rat.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_skeleton_rat_elite_idle.png",
+      "id": "skeleton_rat",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_skeleton_rat_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_skeleton_rat_elite_run.png",
+      "id": "skeleton_rat",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_skeleton_rat_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_crypt_zombie_idle.png",
+      "id": "crypt_zombie",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_crypt_zombie.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_crypt_zombie_run.png",
+      "id": "crypt_zombie",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_crypt_zombie.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_crypt_zombie_elite_idle.png",
+      "id": "crypt_zombie",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_crypt_zombie_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_crypt_zombie_elite_run.png",
+      "id": "crypt_zombie",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_crypt_zombie_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_charge_boar_idle.png",
+      "id": "charge_boar",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_charge_boar.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_charge_boar_run.png",
+      "id": "charge_boar",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_charge_boar.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_charge_boar_elite_idle.png",
+      "id": "charge_boar",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_charge_boar_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_charge_boar_elite_run.png",
+      "id": "charge_boar",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_charge_boar_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_bone_archer_idle.png",
+      "id": "bone_archer",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_bone_archer.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_bone_archer_run.png",
+      "id": "bone_archer",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_bone_archer.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_bone_archer_elite_idle.png",
+      "id": "bone_archer",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_bone_archer_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_bone_archer_elite_run.png",
+      "id": "bone_archer",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_bone_archer_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_blast_mushroom_idle.png",
+      "id": "blast_mushroom",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_blast_mushroom.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_blast_mushroom_run.png",
+      "id": "blast_mushroom",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_blast_mushroom.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_blast_mushroom_elite_idle.png",
+      "id": "blast_mushroom",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_blast_mushroom_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_blast_mushroom_elite_run.png",
+      "id": "blast_mushroom",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_blast_mushroom_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_slime_idle.png",
+      "id": "slime",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_slime.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_slime_run.png",
+      "id": "slime",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 8,
+        "y": 13
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_slime.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_slime_elite_idle.png",
+      "id": "slime",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_slime_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_slime_elite_run.png",
+      "id": "slime",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_slime_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_fire_mage_idle.png",
+      "id": "fire_mage",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_fire_mage.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_fire_mage_run.png",
+      "id": "fire_mage",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 24,
+        "h": 24
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 12,
+        "y": 21
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_fire_mage.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_fire_mage_elite_idle.png",
+      "id": "fire_mage",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_fire_mage_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_fire_mage_elite_run.png",
+      "id": "fire_mage",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 36,
+        "h": 36
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 18,
+        "y": 33
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_fire_mage_elite.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_lava_golem_idle.png",
+      "id": "lava_golem",
+      "elite": false,
+      "action": "idle",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_lava_golem.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_lava_golem_run.png",
+      "id": "lava_golem",
+      "elite": false,
+      "action": "run",
+      "frame_size": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_lava_golem.aseprite",
+      "tag": "run"
+    },
+    {
+      "file": "enm_lava_golem_elite_idle.png",
+      "id": "lava_golem",
+      "elite": true,
+      "action": "idle",
+      "frame_size": {
+        "w": 48,
+        "h": 48
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 24,
+        "y": 45
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_lava_golem_elite.aseprite",
+      "tag": "idle"
+    },
+    {
+      "file": "enm_lava_golem_elite_run.png",
+      "id": "lava_golem",
+      "elite": true,
+      "action": "run",
+      "frame_size": {
+        "w": 48,
+        "h": 48
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 24,
+        "y": 45
+      },
+      "palette": "master",
+      "source": "art/source/rk073/enm_lava_golem_elite.aseprite",
+      "tag": "run"
+    }
+  ]
+}

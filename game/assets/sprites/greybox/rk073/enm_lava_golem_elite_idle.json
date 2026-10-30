@@ -1,0 +1,99 @@
+{
+  "frames": [
+    {
+      "filename": "enm_lava_golem_elite #idle 0.aseprite",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 48
+      },
+      "duration": 167,
+      "pivot": {
+        "x": 24,
+        "y": 45
+      }
+    },
+    {
+      "filename": "enm_lava_golem_elite #idle 1.aseprite",
+      "frame": {
+        "x": 49,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 48,
+        "h": 48
+      },
+      "sourceSize": {
+        "w": 48,
+        "h": 48
+      },
+      "duration": 167,
+      "pivot": {
+        "x": 24,
+        "y": 45
+      }
+    }
+  ],
+  "meta": {
+    "app": "https://www.aseprite.org/",
+    "version": "1.3.18.6-arm64",
+    "image": "enm_lava_golem_elite_idle.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 97,
+      "h": 48
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 1,
+        "direction": "forward",
+        "color": "#000000ff"
+      },
+      {
+        "name": "run",
+        "from": 2,
+        "to": 3,
+        "direction": "forward",
+        "color": "#000000ff"
+      }
+    ],
+    "layers": [
+      {
+        "name": "Shadow",
+        "opacity": 255,
+        "blendMode": "normal"
+      },
+      {
+        "name": "Body",
+        "opacity": 255,
+        "blendMode": "normal"
+      }
+    ],
+    "id": "lava_golem",
+    "elite": true,
+    "action": "idle",
+    "source": "art/source/rk073/enm_lava_golem_elite.aseprite"
+  }
+}
