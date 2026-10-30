@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "file": "bos_gravekeeper_idle.png",
+      "id": "gravekeeper",
+      "category": "boss",
+      "action": "idle",
+      "frame_size": {
+        "w": 64,
+        "h": 64
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 32,
+        "y": 61
+      },
+      "source": "art/source/rk075/bos_gravekeeper.aseprite",
+      "tag": "idle",
+      "palette": "master"
+    },
+    {
+      "file": "bos_gravekeeper_run.png",
+      "id": "gravekeeper",
+      "category": "boss",
+      "action": "run",
+      "frame_size": {
+        "w": 64,
+        "h": 64
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 32,
+        "y": 61
+      },
+      "source": "art/source/rk075/bos_gravekeeper.aseprite",
+      "tag": "run",
+      "palette": "master"
+    },
+    {
+      "file": "bos_furnace_colossus_idle.png",
+      "id": "furnace_colossus",
+      "category": "boss",
+      "action": "idle",
+      "frame_size": {
+        "w": 96,
+        "h": 96
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 48,
+        "y": 93
+      },
+      "source": "art/source/rk075/bos_furnace_colossus.aseprite",
+      "tag": "idle",
+      "palette": "master"
+    },
+    {
+      "file": "bos_furnace_colossus_run.png",
+      "id": "furnace_colossus",
+      "category": "boss",
+      "action": "run",
+      "frame_size": {
+        "w": 96,
+        "h": 96
+      },
+      "frames": 2,
+      "pivot": {
+        "x": 48,
+        "y": 93
+      },
+      "source": "art/source/rk075/bos_furnace_colossus.aseprite",
+      "tag": "run",
+      "palette": "master"
+    }
+  ]
+}

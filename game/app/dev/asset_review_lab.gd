@@ -2,7 +2,7 @@ class_name AssetReviewLab
 extends Control
 ## 独立开发验收台；不驱动 Sim、游戏动画状态或全局时钟。
 
-const CATEGORIES: PackedStringArray = ["", "player", "enemy", "elite", "soul", "pickup", "tag"]
+const CATEGORIES: PackedStringArray = ["", "player", "enemy", "elite", "soul", "pickup", "tag", "boss"]
 const SPEEDS: Array[float] = [0.25, 0.5, 1.0, 2.0]
 var catalog: ReviewCatalog = ReviewCatalog.new()
 var widgets: ReviewWidgets = ReviewWidgets.new()
@@ -107,6 +107,9 @@ func _refresh_tiers() -> void:
 	_load_choice(selected)
 
 func _load_choice(index: int) -> void:
+	var scroll: ScrollContainer = widgets.controls["PreviewScroll"]
+	scroll.scroll_horizontal = 0
+	scroll.scroll_vertical = 0
 	current = _choices[index]
 	resource = catalog.read_entry(current)
 	frame_index = 0

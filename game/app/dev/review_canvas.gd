@@ -48,10 +48,18 @@ func present(texture: Texture2D, current: Dictionary, text: String) -> void:
 	_texture = texture
 	frame = current
 	caption = text
+	# 小资源维持原布局；大画布留出独立的完整1×区及可滚动3×区。
+	custom_minimum_size = Vector2(280, 160)
+	if not frame.is_empty() and frame["rect"].size.y > 48:
+		var dimensions: Vector2 = frame["rect"].size
+		custom_minimum_size = Vector2(dimensions.x * 4 + 48, dimensions.y * 3 + 80)
 	_refresh()
 
 ## 返回预览中 pivot 的整数位置，便于对照实际截图。
 func pivot_at(index: int) -> Vector2:
+	if not frame.is_empty() and frame["rect"].size.y > 48:
+		var origin: Vector2 = Vector2(16 if index == 0 else frame["rect"].size.x + 32, 60)
+		return origin + frame["pivot"] * (1 if index == 0 else 3)
 	return Vector2(floor(size.x * (0.27 if index == 0 else 0.72)), floor(size.y * 0.63))
 
 func _refresh() -> void:

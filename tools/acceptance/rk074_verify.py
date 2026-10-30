@@ -21,6 +21,24 @@ def require(condition,message):
 
 def rgb(code):return tuple(bytes.fromhex(code))+(255,)
 
+def validate_original_records(records):
+    """Keep the exact RK073/RK074 group; permit other tasks to append their own rows."""
+    names073={'chr_'+id+'_'+action+'.png' for id in ('knight','alchemist') for action in ('idle','run')}
+    names073|={'enm_'+id+elite+'_'+action+'.png'
+               for id in ('skeleton_rat','crypt_zombie','charge_boar','bone_archer','blast_mushroom','slime','fire_mage','lava_golem')
+               for elite in ('','_elite') for action in ('idle','run')}
+    names074={e['file'] for e in json.loads((SOURCE/'manifest.json').read_text())['assets']}
+    require(len(names073)==36 and len(names074)==60,'exact original provenance name sets')
+    expected=names073|names074
+    original=[r for r in records if r['资源文件名'] in expected]
+    require(len(original)==96,'exact original 96 provenance records')
+    for name in expected:
+        rows=[r for r in original if r['资源文件名']==name]
+        source=('art/source/rk073/'+name.rsplit('_',1)[0]+'.aseprite' if name in names073
+                else 'art/source/rk074/'+Path(name).with_suffix('.aseprite').name)
+        require(len(rows)==1 and rows[0]['接口名']=='手绘' and rows[0]['原始文件名']==source,
+                'original provenance identity/content '+name)
+
 def run(command,marker=None):
     result=subprocess.run(command,cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=45)
     print(result.stdout,flush=True)
@@ -90,7 +108,7 @@ def validate(table,directory=OUTPUT):
         for key in ('category','id','tags','source','palette'):require(data['meta'][key]==e[key],'metadata '+key)
         require(data['meta'].get('tier',0)==tier,'metadata tier')
     with (ROOT/'art/ai_log.csv').open(encoding='utf-8-sig',newline='') as stream:records=list(csv.DictReader(stream))
-    require(len(records)==96,'preserve old 36 + append 60 provenance records')
+    validate_original_records(records)
     for e in entries:
         rows=[r for r in records if r['资源文件名']==e['file']]
         require(len(rows)==1 and rows[0]['接口名']=='手绘' and rows[0]['原始文件名']==e['source'],'provenance '+e['file'])
