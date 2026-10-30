@@ -1,0 +1,139 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | 正在重新打开场景……[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | 正在加载中央编辑器布局……[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | 正在加载插件窗口布局……[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | 编辑器布局就绪。[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+
+RK075: exact 4 PNG / 4 JSON / 2 native sources; baseline, tags, timing and provenance checked
+RK075_SOURCES: passed
+
+RK075_EXPORT: 4 native-source exports completed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK075_PREVIEW: passed
+
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK075 UI OK two Boss objects
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK gravekeeper/idle strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK gravekeeper_idle_640 full 1x/3x canvas in scroll plane
+RK075 UI OK gravekeeper_idle_640 complete native preview initially visible
+RK075 UI OK gravekeeper_idle_640 all 3x pixels reachable
+RK075 UI OK gravekeeper_idle_640 weapon/feet far corner visible after scrolling
+RK075 scroll gravekeeper_idle_640 plane=[P: (0.0, 0.0), S: (410.0, 272.0)] 3x=[P: (96.0, 60.0), S: (192.0, 192.0)] visible=(410.0, 272.0) offset=(0.0, 0.0)
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK gravekeeper/run strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK gravekeeper_run_640 full 1x/3x canvas in scroll plane
+RK075 UI OK gravekeeper_run_640 complete native preview initially visible
+RK075 UI OK gravekeeper_run_640 all 3x pixels reachable
+RK075 UI OK gravekeeper_run_640 weapon/feet far corner visible after scrolling
+RK075 scroll gravekeeper_run_640 plane=[P: (0.0, 0.0), S: (410.0, 272.0)] 3x=[P: (96.0, 60.0), S: (192.0, 192.0)] visible=(410.0, 272.0) offset=(0.0, 0.0)
+RK075 UI OK controls visible Play
+RK075 UI OK controls visible Previous
+RK075 UI OK controls visible Next
+RK075 UI OK controls visible First
+RK075 UI OK controls visible Export
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-07-14_937.png | resource=res://assets/sprites/greybox/rk075/bos_gravekeeper_run.json | frame=0 | speed=1.0
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK furnace_colossus/idle strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK furnace_colossus_idle_640 full 1x/3x canvas in scroll plane
+RK075 UI OK furnace_colossus_idle_640 complete native preview initially visible
+RK075 UI OK furnace_colossus_idle_640 all 3x pixels reachable
+RK075 UI OK furnace_colossus_idle_640 mouse wheel actually scrolls
+RK075 UI OK furnace_colossus_idle_640 weapon/feet far corner visible after scrolling
+RK075 scroll furnace_colossus_idle_640 plane=[P: (0.0, 0.0), S: (432.0, 368.0)] 3x=[P: (128.0, 60.0), S: (288.0, 288.0)] visible=(410.0, 272.0) offset=(30.0, 104.0)
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK furnace_colossus/run strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK furnace_colossus_run_640 full 1x/3x canvas in scroll plane
+RK075 UI OK furnace_colossus_run_640 complete native preview initially visible
+RK075 UI OK furnace_colossus_run_640 all 3x pixels reachable
+RK075 UI OK furnace_colossus_run_640 mouse wheel actually scrolls
+RK075 UI OK furnace_colossus_run_640 weapon/feet far corner visible after scrolling
+RK075 scroll furnace_colossus_run_640 plane=[P: (0.0, 0.0), S: (432.0, 368.0)] 3x=[P: (128.0, 60.0), S: (288.0, 288.0)] visible=(410.0, 272.0) offset=(30.0, 104.0)
+RK075 UI OK controls visible Play
+RK075 UI OK controls visible Previous
+RK075 UI OK controls visible Next
+RK075 UI OK controls visible First
+RK075 UI OK controls visible Export
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-07-15_1192.png | resource=res://assets/sprites/greybox/rk075/bos_furnace_colossus_run.json | frame=0 | speed=1.0
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK gravekeeper/idle strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK gravekeeper_idle_1280 full 1x/3x canvas in scroll plane
+RK075 UI OK gravekeeper_idle_1280 complete native preview initially visible
+RK075 UI OK gravekeeper_idle_1280 all 3x pixels reachable
+RK075 UI OK gravekeeper_idle_1280 weapon/feet far corner visible after scrolling
+RK075 scroll gravekeeper_idle_1280 plane=[P: (0.0, 0.0), S: (410.0, 272.0)] 3x=[P: (96.0, 60.0), S: (192.0, 192.0)] visible=(410.0, 272.0) offset=(0.0, 0.0)
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK gravekeeper/run strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK gravekeeper_run_1280 full 1x/3x canvas in scroll plane
+RK075 UI OK gravekeeper_run_1280 complete native preview initially visible
+RK075 UI OK gravekeeper_run_1280 all 3x pixels reachable
+RK075 UI OK gravekeeper_run_1280 weapon/feet far corner visible after scrolling
+RK075 scroll gravekeeper_run_1280 plane=[P: (0.0, 0.0), S: (410.0, 272.0)] 3x=[P: (96.0, 60.0), S: (192.0, 192.0)] visible=(410.0, 272.0) offset=(0.0, 0.0)
+RK075 UI OK controls visible Play
+RK075 UI OK controls visible Previous
+RK075 UI OK controls visible Next
+RK075 UI OK controls visible First
+RK075 UI OK controls visible Export
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-07-15_1454.png | resource=res://assets/sprites/greybox/rk075/bos_gravekeeper_run.json | frame=0 | speed=1.0
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK furnace_colossus/idle strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK furnace_colossus_idle_1280 full 1x/3x canvas in scroll plane
+RK075 UI OK furnace_colossus_idle_1280 complete native preview initially visible
+RK075 UI OK furnace_colossus_idle_1280 all 3x pixels reachable
+RK075 UI OK furnace_colossus_idle_1280 mouse wheel actually scrolls
+RK075 UI OK furnace_colossus_idle_1280 weapon/feet far corner visible after scrolling
+RK075 scroll furnace_colossus_idle_1280 plane=[P: (0.0, 0.0), S: (432.0, 368.0)] 3x=[P: (128.0, 60.0), S: (288.0, 288.0)] visible=(410.0, 272.0) offset=(30.0, 104.0)
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 input Next at=[P: (90.0, 298.0), S: (44.0, 24.0)] frame=1 playing=false
+RK075 UI OK furnace_colossus/run strict single step
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK furnace_colossus_run_1280 full 1x/3x canvas in scroll plane
+RK075 UI OK furnace_colossus_run_1280 complete native preview initially visible
+RK075 UI OK furnace_colossus_run_1280 all 3x pixels reachable
+RK075 UI OK furnace_colossus_run_1280 mouse wheel actually scrolls
+RK075 UI OK furnace_colossus_run_1280 weapon/feet far corner visible after scrolling
+RK075 scroll furnace_colossus_run_1280 plane=[P: (0.0, 0.0), S: (432.0, 368.0)] 3x=[P: (128.0, 60.0), S: (288.0, 288.0)] visible=(410.0, 272.0) offset=(30.0, 104.0)
+RK075 UI OK controls visible Play
+RK075 UI OK controls visible Previous
+RK075 UI OK controls visible Next
+RK075 UI OK controls visible First
+RK075 UI OK controls visible Export
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-07-15_1708.png | resource=res://assets/sprites/greybox/rk075/bos_furnace_colossus_run.json | frame=0 | speed=1.0
+RK075 input First at=[P: (138.0, 298.0), S: (32.0, 24.0)] frame=0 playing=false
+RK075 UI OK small resource resets large scroll/size
+RK075_UI: passed
+
+RK075: passed

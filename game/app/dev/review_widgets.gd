@@ -6,8 +6,7 @@ var controls: Dictionary = {}
 
 ## 创建紧凑的响应式界面并返回预览挂载区。
 func build(root: Control) -> Control:
-	root.theme = Theme.new()
-	root.theme.default_font_size = 11
+	root.theme = preload("res://app/dev/debug_ui_theme.tres")
 	root.add_theme_color_override("font_color", Color("#E1DCEB"))
 	var background: ColorRect = ColorRect.new()
 	background.color = Color("#12121C")

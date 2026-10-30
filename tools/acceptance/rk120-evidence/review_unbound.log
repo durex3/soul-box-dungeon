@@ -1,0 +1,374 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/Title missing ["U+8D44 资", "U+6E90 源", "U+9A8C 验", "U+6536 收", "U+53F0 台", "U+7A7A 空", "U+683C 格", "U+64AD 播", "U+653E 放", "U+6682 暂", "U+505C 停", "U+2190 ←", "U+2192 →", "U+5355 单", "U+6B65 步", "U+9996 首", "U+5E27 帧"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/Title actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/Title size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/Title raster settings
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/PreviewScroll missing ["U+5927 大", "U+56FE 图", "U+4FDD 保", "U+6301 持", "U+FF1B ；", "U+4F7F 使", "U+7528 用", "U+53F3 右", "U+4FA7 侧", "U+5E95 底", "U+90E8 部", "U+6EDA 滚", "U+52A8 动", "U+6761 条", "U+67E5 查", "U+770B 看", "U+5168 全", "U+90E8 部", "U+753B 画", "U+5E03 布"]
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/PreviewScroll actual font
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/PreviewScroll size=16
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/PreviewScroll raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ObjectTitle missing ["U+5BF9 对", "U+8C61 象", "U+89D2 角", "U+8272 色"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ObjectTitle actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ObjectTitle size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ObjectTitle raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category missing ["U+5168 全", "U+90E8 部", "U+7C7B 类", "U+522B 别"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category raster settings
+RK120 FAIL popup:Category missing ["U+5168 全", "U+90E8 部", "U+7C7B 类", "U+522B 别"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+73A9 玩", "U+5BB6 家"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+666E 普", "U+901A 通", "U+654C 敌", "U+4EBA 人"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+7CBE 精", "U+82F1 英"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+9B42 魂", "U+5323 匣"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+62FE 拾", "U+53D6 取", "U+7269 物"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category missing ["U+6807 标", "U+7B7E 签"]
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL popup:Category actual font
+RK120 FAIL popup:Category size=16
+RK120 FAIL popup:Category raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category/@PopupMenu@25/@PanelContainer@16/@VBoxContainer@17/@LineEdit@18 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category/@PopupMenu@25/@PanelContainer@16/@VBoxContainer@17/@LineEdit@18 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Category/@PopupMenu@25/@PanelContainer@16/@VBoxContainer@17/@LineEdit@18 raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Search missing ["U+6309 按", "U+7B5B 筛", "U+9009 选"]
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Search actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Search size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Search raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL popup:Object actual font
+RK120 FAIL popup:Object size=16
+RK120 FAIL popup:Object raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object/@PopupMenu@35/@PanelContainer@26/@VBoxContainer@27/@LineEdit@28 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object/@PopupMenu@35/@PanelContainer@26/@VBoxContainer@27/@LineEdit@28 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Object/@PopupMenu@35/@PanelContainer@26/@VBoxContainer@27/@LineEdit@28 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ActionTitle missing ["U+52A8 动", "U+4F5C 作", "U+54C1 品", "U+9636 阶"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ActionTitle actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ActionTitle size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/ActionTitle raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action raster settings
+RK120 FAIL popup:Action actual font
+RK120 FAIL popup:Action size=16
+RK120 FAIL popup:Action raster settings
+RK120 FAIL popup:Action actual font
+RK120 FAIL popup:Action size=16
+RK120 FAIL popup:Action raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action/@PopupMenu@45/@PanelContainer@36/@VBoxContainer@37/@LineEdit@38 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action/@PopupMenu@45/@PanelContainer@36/@VBoxContainer@37/@LineEdit@38 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Action/@PopupMenu@45/@PanelContainer@36/@VBoxContainer@37/@LineEdit@38 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier missing ["U+65E0 无", "U+54C1 品", "U+9636 阶"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier raster settings
+RK120 FAIL popup:Tier missing ["U+65E0 无", "U+54C1 品", "U+9636 阶"]
+RK120 FAIL popup:Tier actual font
+RK120 FAIL popup:Tier size=16
+RK120 FAIL popup:Tier raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier/@PopupMenu@55/@PanelContainer@46/@VBoxContainer@47/@LineEdit@48 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier/@PopupMenu@55/@PanelContainer@46/@VBoxContainer@47/@LineEdit@48 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Tier/@PopupMenu@55/@PanelContainer@46/@VBoxContainer@47/@LineEdit@48 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/EffectTitle missing ["U+7279 特", "U+6548 效"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/EffectTitle actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/EffectTitle size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/EffectTitle raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect missing ["U+672A 未", "U+63A5 接", "U+5165 入"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect raster settings
+RK120 FAIL popup:Effect missing ["U+672A 未", "U+63A5 接", "U+5165 入"]
+RK120 FAIL popup:Effect actual font
+RK120 FAIL popup:Effect size=16
+RK120 FAIL popup:Effect raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect/@PopupMenu@65/@PanelContainer@56/@VBoxContainer@57/@LineEdit@58 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect/@PopupMenu@65/@PanelContainer@56/@VBoxContainer@57/@LineEdit@58 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Effect/@PopupMenu@65/@PanelContainer@56/@VBoxContainer@57/@LineEdit@58 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Geometry missing ["U+78B0 碰", "U+649E 撞", "U+653B 攻", "U+51FB 击", "U+8303 范", "U+56F4 围", "U+FF1A ：", "U+4E0D 不", "U+53EF 可", "U+7528 用", "U+FF08 （", "U+65E0 无", "U+6570 数", "U+636E 据", "U+FF09 ）"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Geometry actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Geometry size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Geometry raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background missing ["U+533A 区", "U+57DF 域", "U+5730 地", "U+9762 面"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background raster settings
+RK120 FAIL popup:Background missing ["U+533A 区", "U+57DF 域", "U+5730 地", "U+9762 面"]
+RK120 FAIL popup:Background actual font
+RK120 FAIL popup:Background size=16
+RK120 FAIL popup:Background raster settings
+RK120 FAIL popup:Background missing ["U+7070 灰", "U+5E95 底"]
+RK120 FAIL popup:Background actual font
+RK120 FAIL popup:Background size=16
+RK120 FAIL popup:Background raster settings
+RK120 FAIL popup:Background missing ["U+900F 透", "U+660E 明", "U+68CB 棋", "U+76D8 盘"]
+RK120 FAIL popup:Background actual font
+RK120 FAIL popup:Background size=16
+RK120 FAIL popup:Background raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background/@PopupMenu@75/@PanelContainer@66/@VBoxContainer@67/@LineEdit@68 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background/@PopupMenu@75/@PanelContainer@66/@VBoxContainer@67/@LineEdit@68 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Background/@PopupMenu@75/@PanelContainer@66/@VBoxContainer@67/@LineEdit@68 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material missing ["U+539F 原", "U+8272 色"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material raster settings
+RK120 FAIL popup:Material missing ["U+539F 原", "U+8272 色"]
+RK120 FAIL popup:Material actual font
+RK120 FAIL popup:Material size=16
+RK120 FAIL popup:Material raster settings
+RK120 FAIL popup:Material missing ["U+7070 灰", "U+5EA6 度"]
+RK120 FAIL popup:Material actual font
+RK120 FAIL popup:Material size=16
+RK120 FAIL popup:Material raster settings
+RK120 FAIL popup:Material missing ["U+7EAF 纯", "U+9ED1 黑", "U+526A 剪", "U+5F71 影", "U+FF08 （", "U+6392 排", "U+9664 除", "U+6295 投", "U+5F71 影", "U+FF09 ）"]
+RK120 FAIL popup:Material actual font
+RK120 FAIL popup:Material size=16
+RK120 FAIL popup:Material raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material/@PopupMenu@85/@PanelContainer@76/@VBoxContainer@77/@LineEdit@78 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material/@PopupMenu@85/@PanelContainer@76/@VBoxContainer@77/@LineEdit@78 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Material/@PopupMenu@85/@PanelContainer@76/@VBoxContainer@77/@LineEdit@78 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Canvas missing ["U+753B 画", "U+5E03 布", "U+6846 框"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Canvas actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Canvas size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Canvas raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Body missing ["U+4E3B 主", "U+4F53 体", "U+6846 框", "U+FF08 （", "U+6709 有", "U+6570 数", "U+636E 据", "U+65F6 时", "U+FF09 ）"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Body actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Body size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Body raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Pivot missing ["U+5341 十", "U+5B57 字"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Pivot actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Pivot size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Pivot raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Baseline missing ["U+5BF9 对", "U+9F50 齐", "U+57FA 基", "U+7EBF 线"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Baseline actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Baseline size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Baseline raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Target missing ["U+5C55 展", "U+793A 示", "U+9776 靶", "U+6807 标", "U+8BB0 记"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Target actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Target size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Target raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/HideNames missing ["U+9690 隐", "U+85CF 藏", "U+540D 名", "U+79F0 称", "U+7F16 编", "U+53F7 号", "U+76F2 盲", "U+770B 看"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/HideNames actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/HideNames size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/HideNames raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Answer missing ["U+4FA7 侧", "U+680F 栏", "U+663E 显", "U+793A 示", "U+7F16 编", "U+53F7 号", "U+7B54 答", "U+6848 案"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Answer actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Answer size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Answer raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details missing ["U+753B 画", "U+5E03 布", "U+5E27 帧", "U+4E3B 主", "U+4F53 体", "U+6846 框", "U+FF1A ：", "U+4E0D 不", "U+53EF 可", "U+7528 用", "U+7F16 编", "U+53F7 号", "U+7B54 答", "U+6848 案", "U+FF1A ：", "U+FF1A ：", "U+FF1A ："]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details raster settings
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details missing ["U+753B 画", "U+5E03 布", "U+5E27 帧", "U+4E3B 主", "U+4F53 体", "U+6846 框", "U+FF1A ：", "U+4E0D 不", "U+53EF 可", "U+7528 用", "U+7F16 编", "U+53F7 号", "U+7B54 答", "U+6848 案", "U+FF1A ：", "U+FF1A ：", "U+FF1A ："]
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details actual font
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details size=16
+RK120 FAIL tooltip:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@HBoxContainer@5/@ScrollContainer@14/@VBoxContainer@15/Details raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Play missing ["U+6682 暂", "U+505C 停"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Play actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Play size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Play raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Previous missing ["U+4E0A 上", "U+4E00 一", "U+5E27 帧"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Previous actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Previous size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Previous raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Next missing ["U+4E0B 下", "U+4E00 一", "U+5E27 帧"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Next actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Next size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Next raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/First missing ["U+9996 首", "U+5E27 帧"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/First actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/First size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/First raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Loop missing ["U+5FAA 循", "U+73AF 环"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Loop actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Loop size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Loop raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed raster settings
+RK120 FAIL popup:Speed actual font
+RK120 FAIL popup:Speed size=16
+RK120 FAIL popup:Speed raster settings
+RK120 FAIL popup:Speed actual font
+RK120 FAIL popup:Speed size=16
+RK120 FAIL popup:Speed raster settings
+RK120 FAIL popup:Speed actual font
+RK120 FAIL popup:Speed size=16
+RK120 FAIL popup:Speed raster settings
+RK120 FAIL popup:Speed actual font
+RK120 FAIL popup:Speed size=16
+RK120 FAIL popup:Speed raster settings
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed/@PopupMenu@97/@PanelContainer@88/@VBoxContainer@89/@LineEdit@90 actual font
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed/@PopupMenu@97/@PanelContainer@88/@VBoxContainer@89/@LineEdit@90 size=16
+RK120 FAIL placeholder:/root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Speed/@PopupMenu@97/@PanelContainer@88/@VBoxContainer@89/@LineEdit@90 raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Export missing ["U+5BFC 导", "U+51FA 出", "U+5F53 当", "U+524D 前", "U+753B 画", "U+9762 面"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Export actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Export size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/@HBoxContainer@87/Export raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/State missing ["U+64AD 播", "U+653E 放", "U+4E2D 中", "U+5E27 帧", "U+FF08 （", "U+57FA 基", "U+FF09 ）", "U+7279 特", "U+6548 效", "U+FF1A ：", "U+672A 未", "U+63A5 接", "U+5165 入"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/State actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/State size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/State raster settings
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/Output missing ["U+8F93 输", "U+51FA 出", "U+FF1A ：", "U+FF08 （", "U+622A 截", "U+56FE 图", "U+9700 需", "U+4EBA 人", "U+5DE5 工", "U+5224 判", "U+65AD 断", "U+FF09 ）"]
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/Output actual font
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/Output size=16
+RK120 FAIL /root/AssetReviewLab/@MarginContainer@3/@VBoxContainer@4/@VBoxContainer@86/Output raster settings
+RK120 FAIL draw:alchemist · idle actual font
+RK120 FAIL draw:alchemist · idle raster settings
+RK120 FAIL draw:1× nearest actual font
+RK120 FAIL draw:1× nearest raster settings
+RK120 FAIL draw:3× nearest actual font
+RK120 FAIL draw:3× nearest raster settings
+RK120_PROBE: failed
+2026-10-31 00:06:10.752 Godot[1243:13600518] _TIPropertyValueIsValid called with 12 on nil context!
+2026-10-31 00:06:10.752 Godot[1243:13600518] imkxpc_setApplicationProperty:value:reply: called with incorrect property value 12, bailing.

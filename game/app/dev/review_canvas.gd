@@ -11,6 +11,8 @@ var _sprites: Array[Sprite2D] = []
 var _texture: Texture2D
 var _shader: Shader = Shader.new()
 var _overlay: Control
+# 只读调试证据：记录本帧实际draw_string参数，覆盖检查不猜测字体继承。
+var text_draws: Array[Dictionary] = []
 
 func _ready() -> void:
 	clip_contents = true
@@ -80,6 +82,7 @@ func _refresh() -> void:
 		_overlay.queue_redraw()
 
 func _draw() -> void:
+	text_draws.clear()
 	var area: Rect2 = Rect2(Vector2.ZERO, size)
 	draw_rect(area, [Color("#1C1B26"), Color("#777777"), Color("#42424B")][background])
 	if background == 2:
@@ -98,7 +101,7 @@ func _draw_guides() -> void:
 	for i: int in 2:
 		var factor: int = 1 if i == 0 else 3
 		var pivot: Vector2 = pivot_at(i)
-		_overlay.draw_string(ThemeDB.fallback_font, Vector2(pivot.x - 12, 36), "%d× nearest" % factor, HORIZONTAL_ALIGNMENT_LEFT, -1, 11, Color("#E1DCEB"))
+		_draw_text(_overlay, get_theme_font("font"), Vector2(pivot.x - 12, 36), "%d× nearest" % factor)
 		if frame.is_empty():
 			continue
 		var origin: Vector2 = pivot - frame["pivot"] * factor
@@ -116,7 +119,12 @@ func _draw_guides() -> void:
 		var target: Vector2 = Vector2(floor(size.x / 2), floor(size.y - 25))
 		_overlay.draw_arc(target, 6, 0, TAU, 24, Color("#A39DB8"))
 		_overlay.draw_line(target - Vector2(9, 0), target + Vector2(9, 0), Color("#A39DB8"))
-		_overlay.draw_string(ThemeDB.fallback_font, target + Vector2(12, 3), "展示靶", HORIZONTAL_ALIGNMENT_LEFT, -1, 11, Color("#E1DCEB"))
+		_draw_text(_overlay, get_theme_font("font"), target + Vector2(12, 3), "展示靶")
 
 func _text(at: Vector2, text: String) -> void:
-	draw_string(ThemeDB.fallback_font, at, text, HORIZONTAL_ALIGNMENT_LEFT, -1, 11, Color("#E1DCEB"))
+	_draw_text(self, get_theme_font("font"), at, text)
+
+func _draw_text(canvas: CanvasItem, font: Font, at: Vector2, text: String) -> void:
+	canvas.draw_string(font, at, text, HORIZONTAL_ALIGNMENT_LEFT, -1, 12, Color("#E1DCEB"))
+	text_draws.append({"text": text, "font": font, "size": 12,
+		"rect": Rect2(at - Vector2(0, font.get_ascent(12)), font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, 12))})

@@ -1,0 +1,180 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK bad resource stopped
+RK119 UI OK specific file shown
+RK119 bad UI: res://assets/sprites/greybox/rk073/chr_knight_run.json
+frames[0].frame 越界或非整数矩形：[P: (99999.0, 0.0), S: (32.0, 32.0)]，PNG=(65, 32)
+RK119 UI OK other resource remains selectable
+RK119_INTERACT: passed
+RK119 fault detected: rect
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK bad resource stopped
+RK119 UI OK specific file shown
+RK119 bad UI: res://assets/sprites/greybox/rk073/chr_knight_run.json
+frames[0] 缺少 frame 矩形或 pivot 数值
+RK119 UI OK other resource remains selectable
+RK119_INTERACT: passed
+RK119 fault detected: pivot
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK bad resource stopped
+RK119 UI OK specific file shown
+RK119 bad UI: res://assets/sprites/greybox/rk073/chr_knight_run.json
+缺图：res://assets/sprites/greybox/rk073/rk119_intentionally_missing.png
+RK119 UI OK other resource remains selectable
+RK119_INTERACT: passed
+RK119 fault detected: image
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK bad resource stopped
+RK119 UI OK specific file shown
+RK119 bad UI: res://assets/sprites/greybox/rk073/chr_knight_run.json
+JSON 第0行：Expected '}'
+RK119 UI OK other resource remains selectable
+RK119_INTERACT: passed
+RK119 fault detected: json
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK knight run duration=83ms
+RK119 UI OK pause holds for 1s
+RK119 UI FAIL next advances exactly one and pauses
+RK119 UI FAIL previous advances exactly one and pauses
+RK119 UI OK loop step wraps first to last
+RK119 UI OK playing last wraps to first
+RK119 UI OK nonloop stops at last
+RK119 UI OK first resets zero
+RK119 UI OK keyboard right steps while button focused
+RK119 UI OK keyboard Home resets
+RK119 UI OK keyboard Space starts
+RK119 UI OK keyboard Space pauses; global clock untouched
+RK119 speed: 0.25
+RK119 speed: 0.5
+RK119 speed: 1.0
+RK119 speed: 2.0
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2408.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 UI OK 1x/3x exact 3x3 pixel blocks (0 mismatches)
+RK119 visible: 原色 / 区域1地面 #1C1B26
+RK119 visible: 原色 / 灰底
+RK119 visible: 原色 / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2457.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 visible: 灰度 / 区域1地面 #1C1B26
+RK119 visible: 灰度 / 灰底
+RK119 visible: 灰度 / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2506.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 visible: 纯黑剪影（排除投影） / 区域1地面 #1C1B26
+RK119 visible: 纯黑剪影（排除投影） / 灰底
+RK119 visible: 纯黑剪影（排除投影） / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2559.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 UI OK compatible action retained; reset frame
+RK119 UI OK T4 static clears animation
+RK119 UI OK T4 body-center pivot
+RK119 tier: 1 frame={ "rect": [P: (0.0, 0.0), S: (6.0, 6.0)], "pivot": (3.0, 3.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (0.0, 0.0), S: (6.0, 6.0)] }
+RK119 tier: 2 frame={ "rect": [P: (0.0, 0.0), S: (8.0, 8.0)], "pivot": (4.0, 4.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (0.0, 0.0), S: (8.0, 8.0)] }
+RK119 tier: 3 frame={ "rect": [P: (0.0, 0.0), S: (10.0, 10.0)], "pivot": (6.0, 5.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (2.0, 1.0), S: (8.0, 8.0)] }
+RK119 tier: 4 frame={ "rect": [P: (0.0, 0.0), S: (12.0, 12.0)], "pivot": (6.0, 6.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (1.0, 1.0), S: (10.0, 10.0)] }
+RK119 UI OK blind preview and answer hidden
+RK119 UI OK answer revealed only in sidebar
+RK119 UI OK all seven tag icons selectable
+RK119 UI OK tag 1x 8x8: fire
+RK119 UI OK tag 1x 8x8: frost
+RK119 UI OK tag 1x 8x8: holy
+RK119 UI OK tag 1x 8x8: lightning
+RK119 UI OK tag 1x 8x8: mechanical
+RK119 UI OK tag 1x 8x8: melee
+RK119 UI OK tag 1x 8x8: undead
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2693.png | resource=res://assets/sprites/greybox/rk074/ui_tag_undead.json | frame=0 | speed=1.0
+RK119 UI OK layout (640, 360) Play
+RK119 UI OK layout (640, 360) Previous
+RK119 UI OK layout (640, 360) Next
+RK119 UI OK layout (640, 360) First
+RK119 UI OK layout (640, 360) Loop
+RK119 UI OK layout (640, 360) Speed
+RK119 UI OK layout (640, 360) Export
+RK119 UI OK layout (640, 360) State
+RK119 UI OK layout (1280, 720) Play
+RK119 UI OK layout (1280, 720) Previous
+RK119 UI OK layout (1280, 720) Next
+RK119 UI OK layout (1280, 720) First
+RK119 UI OK layout (1280, 720) Loop
+RK119 UI OK layout (1280, 720) Speed
+RK119 UI OK layout (1280, 720) Export
+RK119 UI OK layout (1280, 720) State
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-49_2840.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119_INTERACT: failed
+RK119 fault detected: next incorrectly starts playing
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK119 UI OK knight run duration=83ms
+RK119 UI OK pause holds for 1s
+RK119 UI OK next advances exactly one and pauses
+RK119 UI OK previous advances exactly one and pauses
+RK119 UI OK loop step wraps first to last
+RK119 UI OK playing last wraps to first
+RK119 UI OK nonloop stops at last
+RK119 UI OK first resets zero
+RK119 UI OK keyboard right steps while button focused
+RK119 UI OK keyboard Home resets
+RK119 UI OK keyboard Space starts
+RK119 UI OK keyboard Space pauses; global clock untouched
+RK119 speed: 0.25
+RK119 speed: 0.5
+RK119 speed: 1.0
+RK119 speed: 2.0
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2448.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 UI OK 1x/3x exact 3x3 pixel blocks (0 mismatches)
+RK119 visible: 原色 / 区域1地面 #1C1B26
+RK119 visible: 原色 / 灰底
+RK119 visible: 原色 / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2511.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 visible: 灰度 / 区域1地面 #1C1B26
+RK119 visible: 灰度 / 灰底
+RK119 visible: 灰度 / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2565.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 visible: 纯黑剪影（排除投影） / 区域1地面 #1C1B26
+RK119 visible: 纯黑剪影（排除投影） / 灰底
+RK119 visible: 纯黑剪影（排除投影） / 透明棋盘
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2613.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119 UI OK compatible action retained; reset frame
+RK119 UI OK T4 static clears animation
+RK119 UI OK T4 body-center pivot
+RK119 tier: 1 frame={ "rect": [P: (0.0, 0.0), S: (6.0, 6.0)], "pivot": (3.0, 3.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (0.0, 0.0), S: (6.0, 6.0)] }
+RK119 tier: 2 frame={ "rect": [P: (0.0, 0.0), S: (8.0, 8.0)], "pivot": (4.0, 4.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (0.0, 0.0), S: (8.0, 8.0)] }
+RK119 tier: 3 frame={ "rect": [P: (0.0, 0.0), S: (10.0, 10.0)], "pivot": (6.0, 5.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (2.0, 1.0), S: (8.0, 8.0)] }
+RK119 tier: 4 frame={ "rect": [P: (0.0, 0.0), S: (12.0, 12.0)], "pivot": (6.0, 6.0), "duration": 100.0, "exclude_shadow": false, "body_rect": [P: (1.0, 1.0), S: (10.0, 10.0)] }
+RK119 UI OK blind preview and answer hidden
+RK119 UI OK answer revealed only in sidebar
+RK119 UI OK all seven tag icons selectable
+RK119 UI OK tag 1x 8x8: fire
+RK119 UI OK tag 1x 8x8: frost
+RK119 UI OK tag 1x 8x8: holy
+RK119 UI OK tag 1x 8x8: lightning
+RK119 UI OK tag 1x 8x8: mechanical
+RK119 UI OK tag 1x 8x8: melee
+RK119 UI OK tag 1x 8x8: undead
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2749.png | resource=res://assets/sprites/greybox/rk074/ui_tag_undead.json | frame=0 | speed=1.0
+RK119 UI OK layout (640, 360) Play
+RK119 UI OK layout (640, 360) Previous
+RK119 UI OK layout (640, 360) Next
+RK119 UI OK layout (640, 360) First
+RK119 UI OK layout (640, 360) Loop
+RK119 UI OK layout (640, 360) Speed
+RK119 UI OK layout (640, 360) Export
+RK119 UI OK layout (640, 360) State
+RK119 UI OK layout (1280, 720) Play
+RK119 UI OK layout (1280, 720) Previous
+RK119 UI OK layout (1280, 720) Next
+RK119 UI OK layout (1280, 720) First
+RK119 UI OK layout (1280, 720) Loop
+RK119 UI OK layout (1280, 720) Speed
+RK119 UI OK layout (1280, 720) Export
+RK119 UI OK layout (1280, 720) State
+RK119 screenshot: /Users/liugelong/Library/Application Support/Godot/app_userdata/魂匣地牢/review/review_2026-10-31T00-02-52_2863.png | resource=res://assets/sprites/greybox/rk073/chr_knight_run.json | frame=0 | speed=1.0
+RK119_INTERACT: passed
+RK119_FAULTS: passed; exact original bytes restored

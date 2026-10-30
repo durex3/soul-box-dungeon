@@ -20,6 +20,7 @@ func _ready() -> void:
 	var overlay: CanvasLayer = CanvasLayer.new()
 	add_child(overlay)
 	var box: VBoxContainer = VBoxContainer.new()
+	box.theme = preload("res://app/dev/debug_ui_theme.tres")
 	box.position = Vector2(8, 8)
 	overlay.add_child(box)
 	_status = Label.new()
