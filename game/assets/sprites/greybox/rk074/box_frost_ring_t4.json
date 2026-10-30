@@ -1,0 +1,68 @@
+{
+  "frames": [
+    {
+      "filename": "box_frost_ring_t4.aseprite",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 12
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 12,
+        "h": 12
+      },
+      "sourceSize": {
+        "w": 12,
+        "h": 12
+      },
+      "duration": 100,
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      }
+    }
+  ],
+  "meta": {
+    "app": "https://www.aseprite.org/",
+    "version": "1.3.18.6-arm64",
+    "image": "box_frost_ring_t4.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 12,
+      "h": 12
+    },
+    "scale": "1",
+    "layers": [
+      {
+        "name": "Body",
+        "opacity": 255,
+        "blendMode": "normal"
+      },
+      {
+        "name": "Decor",
+        "opacity": 255,
+        "blendMode": "normal"
+      }
+    ],
+    "category": "soul",
+    "id": "frost_ring",
+    "tags": [
+      "frost",
+      "holy"
+    ],
+    "source": "art/source/rk074/box_frost_ring_t4.aseprite",
+    "palette": "ally",
+    "tier": 4
+  }
+}

@@ -1,0 +1,1499 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "file": "box_fireball_t1.png",
+      "category": "soul",
+      "id": "fireball",
+      "tags": [
+        "fire"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_fireball_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_fireball_t2.png",
+      "category": "soul",
+      "id": "fireball",
+      "tags": [
+        "fire"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_fireball_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_fireball_t3.png",
+      "category": "soul",
+      "id": "fireball",
+      "tags": [
+        "fire"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_fireball_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_fireball_t4.png",
+      "category": "soul",
+      "id": "fireball",
+      "tags": [
+        "fire"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_fireball_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_knife_t1.png",
+      "category": "soul",
+      "id": "knife",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_knife_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_knife_t2.png",
+      "category": "soul",
+      "id": "knife",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_knife_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_knife_t3.png",
+      "category": "soul",
+      "id": "knife",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_knife_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_knife_t4.png",
+      "category": "soul",
+      "id": "knife",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_knife_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_icicle_t1.png",
+      "category": "soul",
+      "id": "icicle",
+      "tags": [
+        "frost"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_icicle_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_icicle_t2.png",
+      "category": "soul",
+      "id": "icicle",
+      "tags": [
+        "frost"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_icicle_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_icicle_t3.png",
+      "category": "soul",
+      "id": "icicle",
+      "tags": [
+        "frost"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_icicle_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_icicle_t4.png",
+      "category": "soul",
+      "id": "icicle",
+      "tags": [
+        "frost"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_icicle_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_chain_lightning_t1.png",
+      "category": "soul",
+      "id": "chain_lightning",
+      "tags": [
+        "lightning"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_chain_lightning_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_chain_lightning_t2.png",
+      "category": "soul",
+      "id": "chain_lightning",
+      "tags": [
+        "lightning"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_chain_lightning_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_chain_lightning_t3.png",
+      "category": "soul",
+      "id": "chain_lightning",
+      "tags": [
+        "lightning"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_chain_lightning_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_chain_lightning_t4.png",
+      "category": "soul",
+      "id": "chain_lightning",
+      "tags": [
+        "lightning"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_chain_lightning_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_bone_shield_t1.png",
+      "category": "soul",
+      "id": "bone_shield",
+      "tags": [
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_bone_shield_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_bone_shield_t2.png",
+      "category": "soul",
+      "id": "bone_shield",
+      "tags": [
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_bone_shield_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_bone_shield_t3.png",
+      "category": "soul",
+      "id": "bone_shield",
+      "tags": [
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_bone_shield_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_bone_shield_t4.png",
+      "category": "soul",
+      "id": "bone_shield",
+      "tags": [
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_bone_shield_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_holy_light_t1.png",
+      "category": "soul",
+      "id": "holy_light",
+      "tags": [
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_holy_light_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_holy_light_t2.png",
+      "category": "soul",
+      "id": "holy_light",
+      "tags": [
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_holy_light_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_holy_light_t3.png",
+      "category": "soul",
+      "id": "holy_light",
+      "tags": [
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_holy_light_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_holy_light_t4.png",
+      "category": "soul",
+      "id": "holy_light",
+      "tags": [
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_holy_light_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_gear_t1.png",
+      "category": "soul",
+      "id": "gear",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_gear_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_gear_t2.png",
+      "category": "soul",
+      "id": "gear",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_gear_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_gear_t3.png",
+      "category": "soul",
+      "id": "gear",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_gear_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_gear_t4.png",
+      "category": "soul",
+      "id": "gear",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_gear_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_poison_flask_t1.png",
+      "category": "soul",
+      "id": "poison_flask",
+      "tags": [
+        "fire",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_poison_flask_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_poison_flask_t2.png",
+      "category": "soul",
+      "id": "poison_flask",
+      "tags": [
+        "fire",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_poison_flask_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_poison_flask_t3.png",
+      "category": "soul",
+      "id": "poison_flask",
+      "tags": [
+        "fire",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_poison_flask_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_poison_flask_t4.png",
+      "category": "soul",
+      "id": "poison_flask",
+      "tags": [
+        "fire",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_poison_flask_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_frost_ring_t1.png",
+      "category": "soul",
+      "id": "frost_ring",
+      "tags": [
+        "frost",
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_frost_ring_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_frost_ring_t2.png",
+      "category": "soul",
+      "id": "frost_ring",
+      "tags": [
+        "frost",
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_frost_ring_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_frost_ring_t3.png",
+      "category": "soul",
+      "id": "frost_ring",
+      "tags": [
+        "frost",
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_frost_ring_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_frost_ring_t4.png",
+      "category": "soul",
+      "id": "frost_ring",
+      "tags": [
+        "frost",
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_frost_ring_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_arc_t1.png",
+      "category": "soul",
+      "id": "arc",
+      "tags": [
+        "lightning",
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_arc_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_arc_t2.png",
+      "category": "soul",
+      "id": "arc",
+      "tags": [
+        "lightning",
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_arc_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_arc_t3.png",
+      "category": "soul",
+      "id": "arc",
+      "tags": [
+        "lightning",
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_arc_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_arc_t4.png",
+      "category": "soul",
+      "id": "arc",
+      "tags": [
+        "lightning",
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_arc_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_greatsword_t1.png",
+      "category": "soul",
+      "id": "greatsword",
+      "tags": [
+        "melee"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_greatsword_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_greatsword_t2.png",
+      "category": "soul",
+      "id": "greatsword",
+      "tags": [
+        "melee"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_greatsword_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_greatsword_t3.png",
+      "category": "soul",
+      "id": "greatsword",
+      "tags": [
+        "melee"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_greatsword_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_greatsword_t4.png",
+      "category": "soul",
+      "id": "greatsword",
+      "tags": [
+        "melee"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_greatsword_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "box_scythe_t1.png",
+      "category": "soul",
+      "id": "scythe",
+      "tags": [
+        "melee",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/box_scythe_t1.aseprite",
+      "palette": "ally",
+      "tier": 1
+    },
+    {
+      "file": "box_scythe_t2.png",
+      "category": "soul",
+      "id": "scythe",
+      "tags": [
+        "melee",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/box_scythe_t2.aseprite",
+      "palette": "ally",
+      "tier": 2
+    },
+    {
+      "file": "box_scythe_t3.png",
+      "category": "soul",
+      "id": "scythe",
+      "tags": [
+        "melee",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 10,
+        "h": 10
+      },
+      "body_rect": {
+        "x": 2,
+        "y": 1,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 5.0
+      },
+      "source": "art/source/rk074/box_scythe_t3.aseprite",
+      "palette": "ally",
+      "tier": 3
+    },
+    {
+      "file": "box_scythe_t4.png",
+      "category": "soul",
+      "id": "scythe",
+      "tags": [
+        "melee",
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 12,
+        "h": 12
+      },
+      "body_rect": {
+        "x": 1,
+        "y": 1,
+        "w": 10,
+        "h": 10
+      },
+      "pivot": {
+        "x": 6.0,
+        "y": 6.0
+      },
+      "source": "art/source/rk074/box_scythe_t4.aseprite",
+      "palette": "ally",
+      "tier": 4
+    },
+    {
+      "file": "pick_xp_small.png",
+      "category": "pickup",
+      "id": "xp_small",
+      "tags": [],
+      "canvas_size": {
+        "w": 4,
+        "h": 4
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 4,
+        "h": 4
+      },
+      "pivot": {
+        "x": 2.0,
+        "y": 2.0
+      },
+      "source": "art/source/rk074/pick_xp_small.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "pick_xp_medium.png",
+      "category": "pickup",
+      "id": "xp_medium",
+      "tags": [],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/pick_xp_medium.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "pick_xp_large.png",
+      "category": "pickup",
+      "id": "xp_large",
+      "tags": [],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/pick_xp_large.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "pick_soul_crystal.png",
+      "category": "pickup",
+      "id": "soul_crystal",
+      "tags": [],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/pick_soul_crystal.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "pick_energy.png",
+      "category": "pickup",
+      "id": "energy",
+      "tags": [],
+      "canvas_size": {
+        "w": 6,
+        "h": 6
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 6,
+        "h": 6
+      },
+      "pivot": {
+        "x": 3.0,
+        "y": 3.0
+      },
+      "source": "art/source/rk074/pick_energy.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_fire.png",
+      "category": "tag",
+      "id": "fire",
+      "tags": [
+        "fire"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_fire.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_frost.png",
+      "category": "tag",
+      "id": "frost",
+      "tags": [
+        "frost"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_frost.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_lightning.png",
+      "category": "tag",
+      "id": "lightning",
+      "tags": [
+        "lightning"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_lightning.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_mechanical.png",
+      "category": "tag",
+      "id": "mechanical",
+      "tags": [
+        "mechanical"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_mechanical.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_undead.png",
+      "category": "tag",
+      "id": "undead",
+      "tags": [
+        "undead"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_undead.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_holy.png",
+      "category": "tag",
+      "id": "holy",
+      "tags": [
+        "holy"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_holy.aseprite",
+      "palette": "ally"
+    },
+    {
+      "file": "ui_tag_melee.png",
+      "category": "tag",
+      "id": "melee",
+      "tags": [
+        "melee"
+      ],
+      "canvas_size": {
+        "w": 8,
+        "h": 8
+      },
+      "body_rect": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 8
+      },
+      "pivot": {
+        "x": 4.0,
+        "y": 4.0
+      },
+      "source": "art/source/rk074/ui_tag_melee.aseprite",
+      "palette": "ally"
+    }
+  ]
+}

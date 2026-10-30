@@ -205,5 +205,29 @@ class PngIoTest(unittest.TestCase):
             shutil.rmtree(d)
 
 
+class GreyboxBoxTest(unittest.TestCase):
+    def test_box12_exact_greybox_only(self):
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as temporary:
+            root=Path(temporary)/'sprites'
+            palettes={'ally':set(ally_colors()),'master':set(master_colors())}
+            for folder, allowed in [('greybox/rk074',True),('formal',False),('greybox-copy',False),
+                                    ('greybox/../formal',False),('greybox/nested/../rk074',True)]:
+                path=root/folder/'box_fireball_t4.png';path.parent.mkdir(parents=True,exist_ok=True)
+                write_rgba(path,12,12,[STEEL]*144)
+                errors,_=art_check.check_file(path,{path.name},palettes,resource_root=root)
+                self.assertEqual(bool(errors),not allowed,folder)
+            for size in (6,8,10):
+                self.assertEqual(art_check.check_size('box','box_fireball_t1',size,size,[STEEL]*(size*size))[0],[])
+            path=root/'greybox/rk074/box_fireball_t4.png'
+            for color, expected in [((91,127,166,128),4),(MAGENTA,3),((1,2,3,255),2)]:
+                write_rgba(path,12,12,[color]*144)
+                errors,_=art_check.check_file(path,{path.name},palettes,resource_root=root)
+                self.assertIn(expected,{item for item,_ in errors})
+            write_rgba(path,12,12,[STEEL]*144)
+            errors,_=art_check.check_file(path,set(),palettes,resource_root=root)
+            self.assertIn(6,{item for item,_ in errors})
+
+
 if __name__ == "__main__":
     unittest.main()
