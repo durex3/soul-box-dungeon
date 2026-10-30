@@ -1,0 +1,40 @@
+[
+  {
+    "scene": "asset_review_lab",
+    "launch": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Godot project started in debug mode. Use get_debug_output to see output."
+        }
+      ]
+    },
+    "output": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"output\": [\n    \"Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\",\n    \"\",\n    \"OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"errors\": [\n    \"WARNING: Integer division. Decimal part will be discarded.\",\n    \"     at: GDScript::reload (res://app/dev/review_canvas.gd:91)\",\n    \"WARNING: Integer division. Decimal part will be discarded.\",\n    \"     at: GDScript::reload (res://app/dev/review_canvas.gd:91)\",\n    \"\"\n  ]\n}"
+        }
+      ]
+    }
+  },
+  {
+    "scene": "player_movement_lab",
+    "launch": {
+      "content": [
+        {
+          "type": "text",
+          "text": "Godot project started in debug mode. Use get_debug_output to see output."
+        }
+      ]
+    },
+    "output": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\n  \"output\": [\n    \"Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\",\n    \"\",\n    \"OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"errors\": []\n}"
+        }
+      ]
+    }
+  }
+]

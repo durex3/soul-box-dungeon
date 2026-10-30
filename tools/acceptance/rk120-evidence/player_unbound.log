@@ -1,0 +1,18 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@7 missing ["U+4F4D 位", "U+7F6E 置", "U+6B65 步", "U+6570 数", "U+52A0 加", "U+6210 成"]
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@7 actual font
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@7 raster settings
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@8 missing ["U+5DE6 左", "U+6447 摇", "U+6746 杆", "U+56FA 固", "U+5B9A 定", "U+955C 镜", "U+5934 头", "U+79FB 移", "U+52A8 动", "U+68C0 检", "U+67E5 查"]
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@8 actual font
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Label@8 raster settings
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@9 missing ["U+91CD 重", "U+5EFA 建", "U+FF1A ："]
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@9 actual font
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@9 size=16
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@9 raster settings
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@10 missing ["U+91CD 重", "U+5EFA 建", "U+FF1A ："]
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@10 actual font
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@10 size=16
+RK120 FAIL /root/PlayerMovementLab/@CanvasLayer@5/@VBoxContainer@6/@Button@10 raster settings
+RK120_PROBE: failed

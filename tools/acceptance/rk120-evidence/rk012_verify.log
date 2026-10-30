@@ -1,0 +1,54 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | 正在重新打开场景……[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | 正在加载中央编辑器布局……[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | 正在加载插件窗口布局……[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | 编辑器布局就绪。[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK012 timing fps=30 bonus=0.0 seconds=0.996833 steps=60 position=(703.999, 360.0) distance=63.9990234375
+RK012_DRIVER: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK012 timing fps=30 bonus=0.5 seconds=0.999532 steps=60 position=(735.9985, 360.0) distance=95.99853515625
+RK012_DRIVER: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK012 timing fps=60 bonus=0.0 seconds=1.014073 steps=60 position=(703.999, 360.0) distance=63.9990234375
+RK012_DRIVER: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK012 timing fps=60 bonus=0.5 seconds=1.013726 steps=60 position=(735.9985, 360.0) distance=95.99853515625
+RK012_DRIVER: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK012 INPUT OK D (1.0, 0.0)
+RK012 INPUT OK diagonal (0.707107, -0.707107)
+RK012 INPUT OK opposites cancel X (0.0, -1.0)
+RK012 INPUT OK A+D cancel (0.0, 0.0)
+RK012 INPUT OK release (0.0, 0.0)
+RK012 INPUT OK deadzone 0.1 (0.0, 0.0)
+RK012 INPUT OK remap 0.6 to 0.5 (0.5, 0.0)
+RK012 INPUT OK full X (1.0, 0.0)
+RK012 INPUT OK joy diagonal (0.707107, -0.707107)
+RK012 INPUT OK back to keyboard (0.0, 1.0)
+RK012 chain steps=9 state=(640.0, 369.6001) view=(640.0, 369.6001)
+RK012 hand controller: synthetic InputEventJoypadMotion; no physical controller tested
+RK012 screenshot /private/tmp/rk012-movement.png
+RK012_INPUT: passed
+RK012: passed
