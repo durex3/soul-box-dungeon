@@ -7,8 +7,8 @@ enm_skeleton_rat_idle.png,art/source/rk073/enm_skeleton_rat.aseprite,手绘,灰�
 enm_skeleton_rat_run.png,art/source/rk073/enm_skeleton_rat.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
 enm_skeleton_rat_elite_idle.png,art/source/rk073/enm_skeleton_rat_elite.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
 enm_skeleton_rat_elite_run.png,art/source/rk073/enm_skeleton_rat_elite.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
-enm_crypt_zombie_idle.png,art/source/rk073/enm_crypt_zombie.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
-enm_crypt_zombie_run.png,art/source/rk073/enm_crypt_zombie.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
+enm_crypt_zombie_idle.png,art/source/rk073/enm_crypt_zombie.aseprite,手绘,"灰盒几何绘制，Aseprite 批量导出；退回修订：窄颈分头、前伸手臂、分腿负形与步态，pivot 保持 (8,13)",,,2026-10-30,Codex,大量
+enm_crypt_zombie_run.png,art/source/rk073/enm_crypt_zombie.aseprite,手绘,"灰盒几何绘制，Aseprite 批量导出；退回修订：窄颈分头、前伸手臂、分腿负形与步态，pivot 保持 (8,13)",,,2026-10-30,Codex,大量
 enm_crypt_zombie_elite_idle.png,art/source/rk073/enm_crypt_zombie_elite.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
 enm_crypt_zombie_elite_run.png,art/source/rk073/enm_crypt_zombie_elite.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量
 enm_charge_boar_idle.png,art/source/rk073/enm_charge_boar.aseprite,手绘,灰盒几何绘制，Aseprite 批量导出,,,2026-10-30,Codex,大量

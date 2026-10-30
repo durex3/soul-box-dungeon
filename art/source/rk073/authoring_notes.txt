@@ -29,3 +29,14 @@ Verification: python3 tools/art_check.py
 Preview outputs: /private/tmp/rk073-checks/poses_{1,2}_{1x,3x}.png,
 numbered silhouette_{1,2}_1x.png, separate silhouette_answers.json and timed motion samples.
 The project manager performs the final two-second silhouette recognition judgment.
+
+Review return revision, 2026-10-30 / Codex:
+The ordinary crypt zombie Body cels were replaced in the existing native document.
+Its head is separated by a narrow neck; a projecting elbow/forearm and a slim torso
+leave a clear upright profile; two longer separated legs retain negative space.
+Run frame 2 uses an alternating stance. The foot span remains centered at x=8;
+all four Body frames end at y=12, with the original pivot (8,13).
+Shadow layer, embedded palette, four frame durations and tags were preserved.
+revise_zombie.lua records this explicit one-off native edit, never part of export.
+The historical initial-authoring helper is unchanged and is not the current zombie source.
+The other 17 native documents, including the elite zombie, are unchanged.
