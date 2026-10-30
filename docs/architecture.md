@@ -202,6 +202,12 @@ static func validate(rows: Array[Dictionary]) -> PackedStringArray:
 - 画面规格全部按 style-bible：保留色、绘制层级、像素对齐、特效亮度上限
 - 输入只在 `view/battle/input_collector.gd` 读取，其他节点不调用 `Input`
 
+### RK-045 已确认的敌弹显示约定
+
+- 程序圆弹直径按含描边总尺寸计算，10px起在1px白边外加1px深色圈；详细像素掩码见任务说明。
+- BattleDrawOrder：BACKGROUND=0、ENTITIES=400、ALLY_FX=700、ENEMY_PROJECTILES=800、COMMAND_SIGNALS=900、HUD=1000；敌弹高于世界实体和我方特效，指挥信号/UI仍在其上。
+- 敌弹采用同世界Canvas、绝对z顺序；我方特效透明度只作用于独立兄弟组，不作用于敌弹池或共享祖先。RK-045只实现表现组件及检查场景，后续战斗场景负责接入。
+
 ## 7. 应用层规范
 
 - 负责：启动时校验数据、场景切换、存档（`user://save.json`）、设置（`user://settings.json`）、单局日志（`user://runs/`）、调试面板
@@ -366,6 +372,10 @@ RK-015: 伤害公式
 ### RK-008 开工前参考（2026-10-30）
 
 独立 Godot 4.7.2 工程中，仅 hide() Node2D 后，INHERIT 子节点仍执行 `_process` 和 `_physics_process`（8 次 process_frame 等待区间观测 idle=7、physics=9）；将父节点 process_mode 设为 PROCESS_MODE_DISABLED 后，两类计数增量均为 0；恢复 INHERIT 后两类增量均为 8。仅隐藏不足以满足对象池归还停用要求，验收须在真实树中测量根及子节点的处理计数。具体帧数取决于调度，不作为固定断言。临时参考工程 `/private/tmp/rk008-reference/`，任务说明见已获负责人确认的 RK-008。
+
+### RK-045 开工前参考（2026-10-30）
+
+独立Godot4.7.2图形工程 `/private/tmp/rk045-reference/`：同Canvas中先添加z_index=800、z_as_relative=false的敌方色块，再添加z_index=700我方覆盖块；我方modulate.a依次为1/0.6/0时，实际重叠像素均为#FF2E97。独立兄弟组的透明度和添加顺序不覆盖明确z顺序。此为显示调度参考，不是完整敌弹实现；RK-045的直径口径及具体层级常量已获负责人确认。
 
 ### RK-012 开工前参考（2026-10-30）
 
