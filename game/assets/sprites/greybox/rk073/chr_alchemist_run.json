@@ -1,0 +1,99 @@
+{
+  "frames": [
+    {
+      "filename": "chr_alchemist #run 0.aseprite",
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 83,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      }
+    },
+    {
+      "filename": "chr_alchemist #run 1.aseprite",
+      "frame": {
+        "x": 33,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 32,
+        "h": 32
+      },
+      "sourceSize": {
+        "w": 32,
+        "h": 32
+      },
+      "duration": 83,
+      "pivot": {
+        "x": 16,
+        "y": 29
+      }
+    }
+  ],
+  "meta": {
+    "app": "https://www.aseprite.org/",
+    "version": "1.3.18.6-arm64",
+    "image": "chr_alchemist_run.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 65,
+      "h": 32
+    },
+    "scale": "1",
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 1,
+        "direction": "forward",
+        "color": "#000000ff"
+      },
+      {
+        "name": "run",
+        "from": 2,
+        "to": 3,
+        "direction": "forward",
+        "color": "#000000ff"
+      }
+    ],
+    "layers": [
+      {
+        "name": "Shadow",
+        "opacity": 255,
+        "blendMode": "normal"
+      },
+      {
+        "name": "Body",
+        "opacity": 255,
+        "blendMode": "normal"
+      }
+    ],
+    "id": "alchemist",
+    "elite": false,
+    "action": "run",
+    "source": "art/source/rk073/chr_alchemist.aseprite"
+  }
+}

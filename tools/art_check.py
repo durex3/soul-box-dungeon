@@ -13,6 +13,7 @@ import csv
 import os
 import re
 import sys
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from make_palettes import ally_colors, master_colors  # noqa: E402
@@ -51,7 +52,17 @@ def strip_frames(w, h, sizes):
     return None
 
 
-def check_size(prefix, stem, w, h, pixels):
+def is_greybox(path, resource_root=None):
+    """Only resolved descendants of the real sprites/greybox directory qualify."""
+    base = (Path(resource_root) if resource_root is not None else Path(DEFAULT_DIR)) / "greybox"
+    try:
+        Path(path).resolve().relative_to(base.resolve())
+        return True
+    except ValueError:
+        return False
+
+
+def check_size(prefix, stem, w, h, pixels, greybox=False):
     """第 1 项：尺寸和帧数。返回 (错误列表, 帧宽, 帧数)。"""
     action = stem.split("_")[-1] if stem.count("_") >= 2 else None
     if prefix in ("ui", "vfx"):
@@ -82,8 +93,9 @@ def check_size(prefix, stem, w, h, pixels):
             errors.append(f"第 {i} 帧和第 {i + 1} 帧之间的间隙列（x={x}）不是全透明")
     if prefix == "chr":
         if action in CHR_FRAMES:
-            if frames not in CHR_FRAMES[action]:
-                want = " 或 ".join(str(n) for n in sorted(CHR_FRAMES[action]))
+            allowed_frames = {2} if greybox and action in ("idle", "run") else CHR_FRAMES[action]
+            if frames not in allowed_frames:
+                want = " 或 ".join(str(n) for n in sorted(allowed_frames))
                 errors.append(f"角色动作 {action} 应为 {want} 帧（9.3 节），实际 {frames} 帧")
         elif frames != 1:
             errors.append(f"动作名 {action} 不在 9.3 节的帧数表里（idle、run、skill、death），"
@@ -91,7 +103,7 @@ def check_size(prefix, stem, w, h, pixels):
     return errors, fw, frames
 
 
-def check_file(path, log_names, palettes):
+def check_file(path, log_names, palettes, resource_root=None):
     name = os.path.basename(path)
     stem = name[:-4] if name.lower().endswith(".png") else name
     fails, warns = [], []
@@ -112,7 +124,7 @@ def check_file(path, log_names, palettes):
         fails.append((1, f"无法读取：{e}"))
         return fails, warns
 
-    size_errors, _, _ = check_size(prefix, stem, w, h, pixels)
+    size_errors, _, _ = check_size(prefix, stem, w, h, pixels, greybox=is_greybox(path, resource_root))
     fails += [(1, e) for e in size_errors]
 
     is_ally = prefix in ALLY_PREFIXES

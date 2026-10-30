@@ -112,6 +112,56 @@ class ArtCheckTest(unittest.TestCase):
         self.assertEqual(art_check.main([good, bad, "--log", self.log]), 1)
 
 
+class GreyboxArtCheckTest(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.root = os.path.join(self.temp.name, "sprites")
+        self.palettes = {"master": set(master_colors()), "ally": set(ally_colors())}
+
+    def tearDown(self):
+        self.temp.cleanup()
+
+    def check(self, folder, action="idle", count=2, color=STEEL, logged=True):
+        name = "chr_knight_" + action + ".png"
+        path = os.path.join(self.root, folder, name)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        write_rgba(path, *frames(32, 32, count, color))
+        errors, _ = art_check.check_file(path, {name} if logged else set(), self.palettes,
+                                        resource_root=self.root)
+        return {item for item, _ in errors}
+
+    def test_greybox_requires_two_frames(self):
+        for action in ("idle", "run"):
+            self.assertEqual(self.check("greybox/rk073", action), set())
+            for count in (1, 3, 4, 8):
+                with self.subTest(action=action, count=count):
+                    self.assertIn(1, self.check("greybox/rk073", action, count))
+
+    def test_formal_rules_unchanged(self):
+        for action, count in (("idle", 4), ("run", 8)):
+            self.assertIn(1, self.check("formal", action, 2))
+            self.assertEqual(self.check("formal", action, count), set())
+        self.assertIn(1, self.check("greybox/rk073", "skill", 2))
+        self.assertEqual(self.check("greybox/rk073", "skill", 4), set())
+
+    def test_exact_resolved_directory(self):
+        for folder in ("greybox-copy", "not-greybox", "greybox/../formal", "greyboxes/rk073"):
+            with self.subTest(folder=folder):
+                self.assertIn(1, self.check(folder))
+        self.assertEqual(self.check("greybox/unused/../rk073"), set())
+        outside = os.path.join(self.temp.name, "outside")
+        os.makedirs(outside)
+        os.makedirs(os.path.join(self.root, "greybox"), exist_ok=True)
+        os.symlink(outside, os.path.join(self.root, "greybox", "escape"))
+        self.assertIn(1, self.check("greybox/escape"))
+
+    def test_other_checks_remain_strict(self):
+        self.assertIn(4, self.check("greybox", color=(91,127,166,128)))
+        self.assertTrue({2,3}.issubset(self.check("greybox", color=MAGENTA)))
+        self.assertIn(2, self.check("greybox", color=(1,2,3,255)))
+        self.assertIn(6, self.check("greybox", logged=False))
+
+
 class PngIoTest(unittest.TestCase):
     def test_roundtrip(self):
         d = tempfile.mkdtemp()

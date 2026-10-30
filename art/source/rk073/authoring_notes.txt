@@ -1,0 +1,42 @@
+RK-073 / Codex / 2026-10-30
+
+Native source of truth: the 18 .aseprite documents in this folder.
+Each document: RGB/sRGB, separate Body and Shadow layers, four independent cels per layer,
+idle tag frames 1-2 at 167 ms; run tag frames 3-4 at 83 ms.
+The per-frame foot pivot is (canvas_width / 2, canvas_height - 3).
+
+Initial construction: draw_greyboxes.lua uses native target-grid pixel primitives.
+Normal and elite silhouettes have separate coordinate recipes. Elite limbs, proportions,
+and clusters were arranged independently; no resized raster or multiplied normal coordinates.
+Body outlines are dark for normal units and warning red for elites. Shadow pixels are opaque.
+The ally/master source palette is embedded using the project's existing GPL palettes.
+
+Source history:
+2026-10-30 Codex: authored initial four-pose geometry; native Aseprite save.
+2026-10-30 Codex: assigned project ally/master palettes in-place without redrawing.
+2026-10-30 Codex: reviewed native-scale poses, 3x nearest preview and numbered silhouettes.
+
+Editing workflow: open the .aseprite document in Aseprite and edit it normally.
+Export only: python3 tools/build_rk073_assets.py [--output-dir PATH]
+This exporter reads native documents; it never calls the authoring script or writes sources.
+Optional binary override: ASEPRITE_BIN=/path/to/aseprite.
+The authoring helper refuses to overwrite any existing document; it is historical construction
+support, not the ordinary build path. audit_sources.lua opens sources read-only for validation.
+
+Verification: python3 tools/art_check.py
+              python3 tools/run_tests.py
+              python3 tools/acceptance/rk073_verify.py --preview
+Preview outputs: /private/tmp/rk073-checks/poses_{1,2}_{1x,3x}.png,
+numbered silhouette_{1,2}_1x.png, separate silhouette_answers.json and timed motion samples.
+The project manager performs the final two-second silhouette recognition judgment.
+
+Review return revision, 2026-10-30 / Codex:
+The ordinary crypt zombie Body cels were replaced in the existing native document.
+Its head is separated by a narrow neck; a projecting elbow/forearm and a slim torso
+leave a clear upright profile; two longer separated legs retain negative space.
+Run frame 2 uses an alternating stance. The foot span remains centered at x=8;
+all four Body frames end at y=12, with the original pivot (8,13).
+Shadow layer, embedded palette, four frame durations and tags were preserved.
+revise_zombie.lua records this explicit one-off native edit, never part of export.
+The historical initial-authoring helper is unchanged and is not the current zombie source.
+The other 17 native documents, including the elite zombie, are unchanged.
