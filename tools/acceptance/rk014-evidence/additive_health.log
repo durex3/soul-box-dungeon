@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_03_glass_from_relic_table_fixed_health_and_removal
+RK014 FAIL near expected=56.25 eps=0.000001 actual=50.0 msg=two glass health
+RK014 FAIL near expected=67.5 eps=0.000001 actual=60.0 msg=flat before health factors
+RK014_PROBE: failed
