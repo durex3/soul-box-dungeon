@@ -2,6 +2,8 @@
 
 《魂匣地牢》是一款以魂匣构筑和“瞄准即指挥”为核心的像素地牢游戏。
 
+换电脑或新会话接手，先看[各角色提示词与迁移步骤](docs/handoff-prompts.md)。项目经理按[工作手册](docs/pm-guide.md)接手，开发者按[AGENTS.md](AGENTS.md)领取任务，实时进度见[任务状态](docs/status.md)。
+
 ## 目录
 
 - `game/`：Godot 工程；`data/` 为数据层，`sim/` 为模拟层，`view/` 为表现层，`app/` 为应用层，`assets/` 为资源，`tests/` 为测试。

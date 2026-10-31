@@ -17,6 +17,7 @@
 ## 2. 文档地图
 | 文件 | 内容 | 项目经理怎么用 |
 |---|---|---|
+| [handoff-prompts.md](handoff-prompts.md) | 换电脑检查、负责人/项目经理/开发/测试/美术提示词和返修模板 | 新电脑/新会话先选角色，核实环境及实时status，不依赖旧会话记忆 |
 | `docs/design-reference.md` | GDD v0.4，玩法和数值 | 任务说明引用它的章节；改动要负责人同意 |
 | `docs/style-bible.md` | 美术规范 v0.2，第 13 节 PixelLab 流程，第 14 节美术验收 | 美术任务按第 14 节验收 |
 | `docs/architecture.md` | 分层、编码和测试规范；第 10 节提交格式；第 11 节验收清单；第 12 节实测过的环境事实 | 每次验收逐条对第 11 节；新实测的事实补进第 12 节 |
@@ -139,18 +140,18 @@ RK-0xx 被退回，意见在 docs/tasks/rk-0xx.md 末尾的验收记录里。按
 | 跑 Godot | 一律用 Python `subprocess.run(..., timeout=...)`，脚本出错时 Godot 可能不退出；macOS 没有 `timeout` 命令。新工作树先 `--headless --path game --import` |
 | Python | 3.9；工具只用标准库，项目经理验收可以用 Pillow 11.3.0 |
 | Godot MCP | `@coding-solo/godot-mcp@0.1.1`，按项目配在本机。换电脑重新装：`claude mcp add godot -e GODOT_PATH=/Applications/Godot.app/Contents/MacOS/Godot -- npx -y @coding-solo/godot-mcp@0.1.1` |
-| 版本库 | GitHub：git@github.com:durex3/soul-box-dungeon.git；origin/main已配置，首次上传到b44dc45。后续推送按负责人交办执行 |
+| 版本库 | GitHub：git@github.com:durex3/soul-box-dungeon.git；origin/main已配置，2026-10-31已同步到RK017验收文档eb13486。后续推送按负责人交办执行；换机提示词见handoff-prompts.md |
 | PixelLab | 负责人已付费，确认可以商用（style-bible 13.4 节）。令牌只放环境变量 |
 
 ## 10. 当前进度和待办（2026-10-31）
 - RK-001 到 RK-008、RK-011、RK-012、RK-014、RK-017、RK-041、RK-045、RK-073、RK-074、RK-075、RK-118、RK-119、RK-120 已通过；没有待验收或退回任务；RK119/RK012字体回退风险已由RK-120关闭。
 - RK-005 遗留随机检查漏洞已由 RK-118 补齐，合并 0879fe2。
 - RK-006 固定帧驱动通过，合并 b7fe413；30/60 fps 实测距离差约 0.167%。
-- RK-011 封闭竞技场通过，提交 3de0002，合并 c7ff4fe；全量测试 135 passed，画面全像素检查通过。1280×720 包含墙体；真实玩家/敌人仍由 RK-012/RK-041 接入边界函数。
+- RK-011 封闭竞技场通过，提交 3de0002，合并 c7ff4fe；全量测试 135 passed，画面全像素检查通过。1280×720 包含墙体；真实玩家/敌人现已分别由RK012/RK041接入同一边界函数。
 - RK-008 表现层节点对象池通过，提交 2f0f07c，合并 dd02b33；全量测试 140 passed，真实树归还停用及 9 项非法配置检查通过。
 - RK-073 返修 09c195f 通过，合并 83f9c85；普通僵尸及整套原尺寸剪影通过，36/36 美术检查、42 项 Python 测试、140 项 Godot 测试和原生源重导出通过。
 - RK-074 通过，提交 c93de6c，合并 f6f22bf；本任务60/60、默认96/96美术检查、七图标灰度形状和完整回归通过。
-- 第 4 批 RK-007、RK-012、RK-045 的依赖已通过；RK-012 不再被竞技场阻塞，仍按批次安排。
+- 第4批已全部通过；第5批已通过RK041/RK014/RK017，剩余RK009/RK010/RK013/RK063。当前优先准备RK010，尚未登记待开发。
 
 - RK-119 验收台已通过，提交 ca8ae17，合并 72d6fdd；43项Python/140项Godot、96/96美术检查、图形事件/像素与故障检查、Godot MCP额外检查通过。打开 game/app/dev/asset_review_lab.tscn 单独运行，未接入特效明确标示。
 - RK-075 通过，提交 f5c00aa，合并 25b1e93；两Boss原生灰盒、原尺寸剪影、1倍完整与3倍滚动、100/100美术检查、46项Python/140项Godot及旧资源回归通过。原有棋盘整数除法警告仍保留。
