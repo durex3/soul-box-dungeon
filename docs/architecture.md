@@ -177,6 +177,14 @@ func _process(delta: float) -> void:
 
 ---
 
+### RK-010 已确认的基线口径
+
+- 以300个正式基础敌人及1500个移动/查询/池化显示夹具测当前负载，具体位置、更新频率和同屏检查见任务；不把夹具当完整弹体伤害/战斗实现。
+- 独立debug/Compatibility、640×360逻辑配1920×1080窗口，关闭VSync请求及不限帧并记录实际值；预热后正式采集至少60秒已绘帧间隔。平均FPS=1000*N/sum(dt_ms)，1% low为最慢ceil(N*0.01)项平均帧时的倒数，不平均瞬时FPS。
+- 同步记录逻辑步数及模拟/墙钟推进比例、硬件/模式、原始帧数据和CPU/渲染证据。本机基线不等同GTX1060发布版通过；没有对应环境的项目标未验证。
+- 平均FPS原始值<60记录below_target，由项目经理发起现有RK084的具体优化任务说明；测量完成不等于性能达标，本次不优化/减负载。正式长跑子进程单独允许180秒超时，短检查≤45秒，不改日常run_tests协议。
+- 本任务仅授权开发新增/追加docs/perf.md实测记录，其他docs仍由项目经理维护。
+
 ## 5. 数据层规范
 
 - 每张表一个文件，例如 `data/soul_table.gd`，`class_name SoulTable`，只包含 `const ROWS` 和静态校验函数
@@ -394,6 +402,10 @@ RK-015: 伤害公式
 ### RK-008 开工前参考（2026-10-30）
 
 独立 Godot 4.7.2 工程中，仅 hide() Node2D 后，INHERIT 子节点仍执行 `_process` 和 `_physics_process`（8 次 process_frame 等待区间观测 idle=7、physics=9）；将父节点 process_mode 设为 PROCESS_MODE_DISABLED 后，两类计数增量均为 0；恢复 INHERIT 后两类增量均为 8。仅隐藏不足以满足对象池归还停用要求，验收须在真实树中测量根及子节点的处理计数。具体帧数取决于调度，不作为固定断言。临时参考工程 `/private/tmp/rk008-reference/`，任务说明见已获负责人确认的 RK-008。
+
+### RK-010 开工前参考（2026-10-31）
+
+独立Godot4.7.2 Compatibility/M1图形探针 `/private/tmp/rk010-reference/probe.gd`：关闭VSync读回模式0，单ColorRect实际渲染draw calls=1、objects=1，node/memory监视器可读；8帧内TIME_PROCESS读0，不可据此推断GPU/CPU负载为零。Godot及Python核对帧间隔[10,10,10,20,50]ms：按1000*N/sum(dt)平均50FPS，最慢ceil(N*1%)项的平均帧时倒数为1% low=20FPS。RK010具体300/1500夹具及60秒基线口径已获负责人确认；参考探针未执行正式压测，不预填性能结论。
 
 ### RK-017 开工前参考（2026-10-31）
 
