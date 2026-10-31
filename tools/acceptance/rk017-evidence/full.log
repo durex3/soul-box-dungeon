@@ -1,0 +1,241 @@
+STEP 1: /opt/homebrew/opt/python@3.9/bin/python3.9 -m unittest discover -s tools
+..............................................
+----------------------------------------------------------------------
+Ran 46 tests in 0.315s
+
+OK
+通过  ../../../../var/folders/dm/8mm_dny951x03nbd4whs97cc0000gn/T/tmpyae07t05/chr_knight_idle.png
+
+共 1 个文件，通过 1 个，不通过 0 个
+通过  ../../../../var/folders/dm/8mm_dny951x03nbd4whs97cc0000gn/T/tmpyae07t05/chr_knight_idle.png
+不通过  ../../../../var/folders/dm/8mm_dny951x03nbd4whs97cc0000gn/T/tmpyae07t05/chr_knight_run.png
+    [1] 角色动作 run 应为 8 帧（9.3 节），实际 6 帧
+
+共 2 个文件，通过 1 个，不通过 1 个
+STEP 2: /opt/homebrew/opt/python@3.9/bin/python3.9 tools/lint_layers.py
+LAYERS: passed
+STEP 3: /Applications/Godot.app/Contents/MacOS/Godot --headless --path game --import
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (2 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Sim[39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | InputCollector[39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | 正在重新打开场景……[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | 正在加载中央编辑器布局……[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | 正在加载插件窗口布局……[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | 编辑器布局就绪。[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+STEP 4: /Applications/Godot.app/Contents/MacOS/Godot --headless --path game -s res://tests/lib/run_tests.gd
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RUN res://tests/data/test_data_check.gd::test_bidirectional_references
+RUN res://tests/data/test_data_check.gd::test_empty_and_missing_refs
+RUN res://tests/data/test_data_check.gd::test_enemy_wave_limit
+RUN res://tests/data/test_data_check.gd::test_missing_references
+RUN res://tests/data/test_data_check.gd::test_validate_all
+RUN res://tests/data/test_enemy_table.gd::test_archetype
+RUN res://tests/data/test_enemy_table.gd::test_charger_requires_dash
+RUN res://tests/data/test_enemy_table.gd::test_children_only_splitter
+RUN res://tests/data/test_enemy_table.gd::test_damage
+RUN res://tests/data/test_enemy_table.gd::test_dash_only_charger
+RUN res://tests/data/test_enemy_table.gd::test_duplicate_ids
+RUN res://tests/data/test_enemy_table.gd::test_first_wave
+RUN res://tests/data/test_enemy_table.gd::test_hp
+RUN res://tests/data/test_enemy_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_enemy_table.gd::test_real_data
+RUN res://tests/data/test_enemy_table.gd::test_row_count
+RUN res://tests/data/test_enemy_table.gd::test_speed
+RUN res://tests/data/test_enemy_table.gd::test_splitter_requires_child_xp
+RUN res://tests/data/test_enemy_table.gd::test_spot_values
+RUN res://tests/data/test_enemy_table.gd::test_wrong_types_safe
+RUN res://tests/data/test_enemy_table.gd::test_xp
+RUN res://tests/data/test_relic_table.gd::test_duplicate_ids
+RUN res://tests/data/test_relic_table.gd::test_effect_required
+RUN res://tests/data/test_relic_table.gd::test_evolution_epic
+RUN res://tests/data/test_relic_table.gd::test_evolution_unique
+RUN res://tests/data/test_relic_table.gd::test_legendary_unique
+RUN res://tests/data/test_relic_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_relic_table.gd::test_mod_key
+RUN res://tests/data/test_relic_table.gd::test_mod_string_key
+RUN res://tests/data/test_relic_table.gd::test_mod_type
+RUN res://tests/data/test_relic_table.gd::test_mod_zero
+RUN res://tests/data/test_relic_table.gd::test_price
+RUN res://tests/data/test_relic_table.gd::test_quality
+RUN res://tests/data/test_relic_table.gd::test_real_data
+RUN res://tests/data/test_relic_table.gd::test_row_count
+RUN res://tests/data/test_relic_table.gd::test_spot_values
+RUN res://tests/data/test_relic_table.gd::test_wrong_types_safe
+RUN res://tests/data/test_soul_table.gd::test_cooldown_positive
+RUN res://tests/data/test_soul_table.gd::test_damage_positive
+RUN res://tests/data/test_soul_table.gd::test_duplicate_ids
+RUN res://tests/data/test_soul_table.gd::test_evolution_pair
+RUN res://tests/data/test_soul_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_soul_table.gd::test_no_orphan_evolved_name
+RUN res://tests/data/test_soul_table.gd::test_real_data
+RUN res://tests/data/test_soul_table.gd::test_row_count
+RUN res://tests/data/test_soul_table.gd::test_spot_values
+RUN res://tests/data/test_soul_table.gd::test_sustained_cooldown
+RUN res://tests/data/test_soul_table.gd::test_sustained_zero
+RUN res://tests/data/test_soul_table.gd::test_tag_unknown
+RUN res://tests/data/test_soul_table.gd::test_tags_duplicate
+RUN res://tests/data/test_soul_table.gd::test_tags_empty
+RUN res://tests/data/test_soul_table.gd::test_tags_too_many
+RUN res://tests/data/test_soul_table.gd::test_unit
+RUN res://tests/data/test_soul_table.gd::test_wrong_types_safe
+RUN res://tests/data/test_table_util.gd::test_diagnostic_context
+RUN res://tests/data/test_table_util.gd::test_duplicate_and_empty_id
+RUN res://tests/data/test_table_util.gd::test_float_accepts_int
+RUN res://tests/data/test_table_util.gd::test_schema_errors
+RUN res://tests/data/test_upgrade_table.gd::test_coverage
+RUN res://tests/data/test_upgrade_table.gd::test_duplicate_ids
+RUN res://tests/data/test_upgrade_table.gd::test_group
+RUN res://tests/data/test_upgrade_table.gd::test_id
+RUN res://tests/data/test_upgrade_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_upgrade_table.gd::test_real_data
+RUN res://tests/data/test_upgrade_table.gd::test_row_count
+RUN res://tests/data/test_upgrade_table.gd::test_spot_values
+RUN res://tests/data/test_upgrade_table.gd::test_values_count
+RUN res://tests/data/test_upgrade_table.gd::test_values_order
+RUN res://tests/data/test_upgrade_table.gd::test_values_positive
+RUN res://tests/data/test_upgrade_table.gd::test_values_type
+RUN res://tests/data/test_upgrade_table.gd::test_wrong_types_safe
+RUN res://tests/data/test_wave_table.gd::test_duplicate_ids
+RUN res://tests/data/test_wave_table.gd::test_duration
+RUN res://tests/data/test_wave_table.gd::test_duration_order
+RUN res://tests/data/test_wave_table.gd::test_elite
+RUN res://tests/data/test_wave_table.gd::test_elite_order
+RUN res://tests/data/test_wave_table.gd::test_end_duration
+RUN res://tests/data/test_wave_table.gd::test_end_elites
+RUN res://tests/data/test_wave_table.gd::test_end_rate
+RUN res://tests/data/test_wave_table.gd::test_gap
+RUN res://tests/data/test_wave_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_wave_table.gd::test_out_of_order
+RUN res://tests/data/test_wave_table.gd::test_overlap
+RUN res://tests/data/test_wave_table.gd::test_rate
+RUN res://tests/data/test_wave_table.gd::test_rate_order
+RUN res://tests/data/test_wave_table.gd::test_real_data
+RUN res://tests/data/test_wave_table.gd::test_row_count
+RUN res://tests/data/test_wave_table.gd::test_spot_values
+RUN res://tests/data/test_wave_table.gd::test_starts_at_one
+RUN res://tests/data/test_wave_table.gd::test_wave_order
+RUN res://tests/data/test_wave_table.gd::test_wrong_types_safe
+RUN res://tests/data/test_weapon_table.gd::test_damage
+RUN res://tests/data/test_weapon_table.gd::test_duplicate_ids
+RUN res://tests/data/test_weapon_table.gd::test_energy
+RUN res://tests/data/test_weapon_table.gd::test_energy_bounds
+RUN res://tests/data/test_weapon_table.gd::test_kind
+RUN res://tests/data/test_weapon_table.gd::test_missing_fields_safe
+RUN res://tests/data/test_weapon_table.gd::test_pellets
+RUN res://tests/data/test_weapon_table.gd::test_rate
+RUN res://tests/data/test_weapon_table.gd::test_real_data
+RUN res://tests/data/test_weapon_table.gd::test_resonance
+RUN res://tests/data/test_weapon_table.gd::test_row_count
+RUN res://tests/data/test_weapon_table.gd::test_spot_values
+RUN res://tests/data/test_weapon_table.gd::test_staff_rejects_mechanical
+RUN res://tests/data/test_weapon_table.gd::test_staff_requires_tag
+RUN res://tests/data/test_weapon_table.gd::test_staff_tag
+RUN res://tests/data/test_weapon_table.gd::test_wrong_types_safe
+RUN res://tests/lib/test_gd_test.gd::test_eq_fail
+RUN res://tests/lib/test_gd_test.gd::test_eq_pass
+RUN res://tests/lib/test_gd_test.gd::test_failures_copy
+RUN res://tests/lib/test_gd_test.gd::test_multiple_failures
+RUN res://tests/lib/test_gd_test.gd::test_near
+RUN res://tests/sim/combat/test_stat_block.gd::test_01_defaults_exact_keys_units_and_isolation
+RUN res://tests/sim/combat/test_stat_block.gd::test_02_all_caps_floors_and_uncapped_values
+RUN res://tests/sim/combat/test_stat_block.gd::test_03_glass_from_relic_table_fixed_health_and_removal
+RUN res://tests/sim/combat/test_stat_block.gd::test_03_health_floor_and_nonnegative_factors_recover_raw_sources
+RUN res://tests/sim/combat/test_stat_block.gd::test_04_raw_sum_then_clamp_and_source_restoration
+RUN res://tests/sim/combat/test_stat_block.gd::test_05_invalid_input_is_atomic_and_extras_rejected
+RUN res://tests/sim/combat/test_stat_block.gd::test_05_replace_remove_deep_copy_and_deterministic_order
+RUN res://tests/sim/combat/test_stat_sim.gd::test_06_events_failures_and_enemy_identity_index_rng_unchanged
+RUN res://tests/sim/combat/test_stat_sim.gd::test_06_initial_compatibility_reserved_source_and_independent_runs
+RUN res://tests/sim/combat/test_stat_sim.gd::test_06_movement_initial_command_replace_remove_half_and_diagonal
+RUN res://tests/sim/combat/test_stat_sim.gd::test_06_replay_mixed_source_histories_and_input
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_03_hold_release_short_press_and_toggle_parity
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_03_mode_change_stops_and_waits_for_fresh_press
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_fractional_cadence_frames_and_counts
+RK017 cadence knight_sword boost=0.0 shots=16 first=[1, 39, 76, 114, 151, 189]
+RK017 cadence apprentice_fire_staff boost=0.0 shots=20 first=[1, 31, 61, 91, 121, 151]
+RK017 cadence knight_sword boost=1.0 shots=32 first=[1, 20, 39, 58, 76, 95]
+RK017 cadence apprentice_fire_staff boost=1.0 shots=40 first=[1, 16, 31, 46, 61, 76]
+RK017 cadence goblin_smg boost=3.0 shots=320 first=[1, 3, 5, 7, 9, 11]
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_idle_pause_ready_and_no_debt
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_ready_single_then_wait
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_release_repress_and_stat_changes_preserve_positive_timer
+RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_shared_cooldown_switch_and_reequip_preserve_time
+RUN res://tests/sim/combat/test_weapon_state.gd::test_01_all_eight_table_values_and_event_snapshot
+RUN res://tests/sim/combat/test_weapon_state.gd::test_01_empty_independence_equipment_clear_and_atomic_errors
+RUN res://tests/sim/combat/test_weapon_state.gd::test_02_cardinal_diagonal_coincident_and_invalid_aim
+RUN res://tests/sim/combat/test_weapon_state.gd::test_02_move_then_aim_switch_then_fire_new_slot
+RUN res://tests/sim/combat/test_weapon_state.gd::test_05_replay_input_immutability_and_event_values
+RUN res://tests/sim/core/test_arena_bounds.gd::test_clamp_edges_and_corners
+RUN res://tests/sim/core/test_arena_bounds.gd::test_contains_entire_circle_inclusive
+RUN res://tests/sim/core/test_arena_bounds.gd::test_fractional_radius_consistency
+RUN res://tests/sim/core/test_arena_bounds.gd::test_max_radius_and_idempotence
+RUN res://tests/sim/core/test_arena_bounds.gd::test_player_and_enemy_markers
+RUN res://tests/sim/core/test_arena_bounds.gd::test_rectangles
+RUN res://tests/sim/core/test_run_rng.gd::test_additional_reference_vectors
+RUN res://tests/sim/core/test_run_rng.gd::test_boundary_seeds
+RUN res://tests/sim/core/test_run_rng.gd::test_derived_seed_vectors
+RUN res://tests/sim/core/test_run_rng.gd::test_different_run_seeds
+RUN res://tests/sim/core/test_run_rng.gd::test_engine_rng_baseline
+RUN res://tests/sim/core/test_run_rng.gd::test_same_seed_sequences
+RUN res://tests/sim/core/test_run_rng.gd::test_shop_does_not_affect_other_streams
+RUN res://tests/sim/core/test_run_rng.gd::test_streams_are_distinct
+RUN res://tests/sim/core/test_spatial_hash.gd::test_circle_filter_and_boundaries
+RUN res://tests/sim/core/test_spatial_hash.gd::test_grid_lines_and_negative_coordinates
+RUN res://tests/sim/core/test_spatial_hash.gd::test_index_lifecycle
+RUN res://tests/sim/core/test_spatial_hash.gd::test_move_and_bucket_cleanup
+RUN res://tests/sim/core/test_spatial_hash.gd::test_mutated_fixture_and_crowded_clear
+RUN res://tests/sim/core/test_spatial_hash.gd::test_order_independence_and_result_copy
+RUN res://tests/sim/core/test_spatial_hash.gd::test_random_1000_points_100_queries
+RUN res://tests/sim/test_enemy_crowd.gd::test_200_follow_right_then_down
+RUN res://tests/sim/test_enemy_crowd.gd::test_replay_queries_lifecycle_and_rng_unchanged
+RUN res://tests/sim/test_enemy_crowd.gd::test_standard_200_density_600_steps
+RK041 density 200/600 iterations=8 min=14.775475 p5=14.801676 median=15.326491 below14=0
+RUN res://tests/sim/test_enemy_motion.gd::test_coincident_direction_uses_full_id_history
+RUN res://tests/sim/test_enemy_motion.gd::test_four_walls_four_corners_stay_bounded_and_leave_wall
+RUN res://tests/sim/test_enemy_motion.gd::test_isolated_axial_and_diagonal_speed
+RUN res://tests/sim/test_enemy_motion.gd::test_pairs_apart_tangent_overlap_and_coincident
+RUN res://tests/sim/test_enemy_motion.gd::test_player_first_retarget_arrive_and_exact_coincidence
+RUN res://tests/sim/test_enemy_motion.gd::test_three_coincident_resolve_non_collinear_deterministically
+RUN res://tests/sim/test_enemy_state.gd::test_command_ids_failure_atomicity_and_query_copy
+RUN res://tests/sim/test_enemy_state.gd::test_eight_species_wave_danger_and_table_unchanged
+RUN res://tests/sim/test_enemy_state.gd::test_factory_instance_isolation
+RUN res://tests/sim/test_enemy_state.gd::test_index_cross_bucket_and_removal_after_motion
+RUN res://tests/sim/test_player_movement.gd::test_axis_distance_and_bonus
+RUN res://tests/sim/test_player_movement.gd::test_bonus_clamp
+RUN res://tests/sim/test_player_movement.gd::test_deterministic_fractional_position
+RUN res://tests/sim/test_player_movement.gd::test_diagonal_and_analog_magnitude
+RUN res://tests/sim/test_player_movement.gd::test_initial_state_and_isolation
+RUN res://tests/sim/test_player_movement.gd::test_walls_corners_and_leave_wall
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_long_frame_clamp
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_negative_delta_preserves_remainder
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_pause_preserves_remainder
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_paused_clock_drops_time
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_reset_clears_remainder_and_pause
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_synthetic_144_fps
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_synthetic_30_fps
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_synthetic_60_fps
+RUN res://tests/view/battle/test_fixed_step_clock.gd::test_zero_and_fractional_steps
+RUN res://tests/view/battle/test_node_pool.gd::test_capacity_identity_and_reuse
+RUN res://tests/view/battle/test_node_pool.gd::test_initial_state
+RUN res://tests/view/battle/test_node_pool.gd::test_invalid_releases
+RUN res://tests/view/battle/test_node_pool.gd::test_release_state_and_hooks
+RUN res://tests/view/battle/test_node_pool.gd::test_ten_thousand_full_cycles
+TESTS: 189 passed, 0 failed
