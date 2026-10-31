@@ -108,6 +108,14 @@ RK-012已获负责人确认：先实现只含移动方向的InputFrame、PlayerS
 - Sim.apply增加SET_STAT_MODIFIER/REMOVE_STAT_MODIFIER，成功返回玩家ID0的STATS_CHANGED，失败COMMAND_FAILED且原子。写入仍由Sim执行，表现层只读StatBlock值；PlayerState.move_speed_bonus保留为只读兼容镜像，自主移动读取有效属性。
 - 既有构造器initial_move_speed_bonus先按RK012夹取0—1，再作为固定保留来源写入，不可经外部命令改写；普通来源仍保留未经截断的修正。当前生命、伤害公式及遗物购买不在RK014范围。
 
+### RK-017 已确认的主武器框架约定
+
+- InputFrame增加世界瞄准点/有效标记、fire_held、fire_presses和switch_steps；InputCollector缓存按下及切槽边沿，sample一次消费，补帧不重复、无逻辑步不丢弃。旧无配置采样仍兼容移动；窗口失焦/重建清空输入并经Sim停火。
+- PlayerState持有独立两槽WeaponState，新局默认空槽；Sim.apply增加SET_WEAPON_SLOT/SET_FIRE_MODE，错误原子失败，成功产生相应事件，具体角色初始装备留后续任务。
+- HOLD按住开火、TOGGLE点击开启/再次点击关闭；换模式清持续状态并在必要时等待松开再按。两槽共享冷却，切换/重装备保留剩余秒数；已发冷却不因攻速变化重算，下一发使用新有效射速。固定步保留冷却余数，不积累闲置补射。
+- 本步移动和敌人更新后处理瞄准、槽切换及至多一发WEAPON_FIRED，事件携带整数玩家ID和武器/槽、世界origin/direction、base_damage及有效射速的值快照。基伤和射速读WeaponTable，射速乘(1+有效attack_speed)；不实施能量、实际弹道或最终伤害。
+- 只允许追加本任务所需鼠标/Q/滚轮InputMap；生产输入读取仍在collector，场景只转发输入及提供世界坐标上下文。UI按下不误开火，松开不粘滞，具体约定见任务说明。
+
 ### 4.2 固定逻辑帧
 
 - 逻辑帧率固定为 60 Hz，常量 `Sim.DT = 1.0 / 60.0`。模拟层的计时都按 `Sim.DT` 累加，不接收渲染帧的 `delta`
@@ -386,6 +394,10 @@ RK-015: 伤害公式
 ### RK-008 开工前参考（2026-10-30）
 
 独立 Godot 4.7.2 工程中，仅 hide() Node2D 后，INHERIT 子节点仍执行 `_process` 和 `_physics_process`（8 次 process_frame 等待区间观测 idle=7、physics=9）；将父节点 process_mode 设为 PROCESS_MODE_DISABLED 后，两类计数增量均为 0；恢复 INHERIT 后两类增量均为 8。仅隐藏不足以满足对象池归还停用要求，验收须在真实树中测量根及子节点的处理计数。具体帧数取决于调度，不作为固定断言。临时参考工程 `/private/tmp/rk008-reference/`，任务说明见已获负责人确认的 RK-008。
+
+### RK-017 开工前参考（2026-10-31）
+
+独立Godot4.7.2工程 `/private/tmp/rk017-reference/` 验证60Hz正冷却扣DT、开火后加间隔并保留余数（epsilon=1e-9）：600步射速1.6/2/3.2/4分别16/20/32/40次；1.6次/秒前五次为第1/39/76/114/151步。剑首发后改为2次/秒但保留已有冷却，事件在第1/39/69/99步。此为算术参考；共享冷却、两种模式及事件范围已获负责人确认，详见RK017任务说明。
 
 ### RK-014 开工前参考（2026-10-31）
 
