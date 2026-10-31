@@ -1,7 +1,7 @@
 class_name SimEvent
 extends RefCounted
 
-enum Kind { SPAWNED, DESPAWNED, COMMAND_FAILED }
+enum Kind { SPAWNED, DESPAWNED, COMMAND_FAILED, STATS_CHANGED }
 var kind: Kind
 var entity_id: int
 var reason: String

@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_04_raw_sum_then_clamp_and_source_restoration
+RK014 FAIL near expected=0.7 eps=0.000001 actual=0.1 msg=raw sum 0.8+0.8-0.9
+RK014 FAIL near expected=0.8 eps=0.000001 actual=0.2 msg=remove capped positive retains raw other
+RK014 FAIL near expected=0.2 eps=0.000001 actual=0.5 msg=negative raw source retained
+RK014_PROBE: failed

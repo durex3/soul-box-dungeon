@@ -2,6 +2,7 @@ class_name Sim
 extends RefCounted
 
 const DT: float = 1.0 / 60.0
+const INITIAL_MOVE_SPEED_SOURCE: StringName = &"initial_move_speed"
 const ID_HASH_MIX: int = 0x45d9f3b
 const ID_HASH_MASK: int = 0xffffffff
 
@@ -16,23 +17,36 @@ func _init(seed_value: int, character_id: StringName, initial_move_speed_bonus: 
 	rng = RunRng.new(seed_value)
 	state.player.character_id = character_id
 	state.player.position = ArenaBounds.play_rect().get_center()
-	state.player.move_speed_bonus = clampf(initial_move_speed_bonus, Balance.STAT_BASE[&"move_speed"], Balance.STAT_CAP[&"move_speed"])
+	state.player.stats.set_modifier(INITIAL_MOVE_SPEED_SOURCE, {&"move_speed": clampf(initial_move_speed_bonus, Balance.STAT_BASE[&"move_speed"], Balance.STAT_CAP[&"move_speed"])})
+	_sync_player_stats()
 
 ## 固定步先更新玩家，再按ID追击和分离；运动暂不产生事件。
 func step(input: InputFrame) -> Array[SimEvent]:
 	var direction: Vector2 = input.move_direction.limit_length(1.0)
-	var speed: float = PlayerConfig.BASE_MOVE_TILES_PER_SECOND * ArenaConfig.TILE_PX * (1.0 + state.player.move_speed_bonus)
+	var speed: float = PlayerConfig.BASE_MOVE_TILES_PER_SECOND * ArenaConfig.TILE_PX * (1.0 + state.player.stats.value(&"move_speed"))
 	var next: Vector2 = state.player.position + direction * speed * DT
 	state.player.position = ArenaBounds.clamp_position(next, state.player.radius)
 	_move_enemies()
 	var events: Array[SimEvent] = []
 	return events
 
-## 两次逻辑步之间处理出生/移除意图，事件表示对应状态改变已完成。
+## 两次逻辑步之间处理敌人生命周期或玩家属性意图，事件表示改变已完成。
 func apply(cmd: Command) -> Array[SimEvent]:
 	if cmd == null:
 		return [SimEvent.new(SimEvent.Kind.COMMAND_FAILED, -1, "空命令")]
 	match cmd.kind:
+		Command.Kind.SET_STAT_MODIFIER, Command.Kind.REMOVE_STAT_MODIFIER:
+			if cmd.modifier_source == INITIAL_MOVE_SPEED_SOURCE:
+				return [SimEvent.new(SimEvent.Kind.COMMAND_FAILED, -1, "不可修改保留属性来源")]
+			var changed: bool
+			if cmd.kind == Command.Kind.SET_STAT_MODIFIER:
+				changed = state.player.stats.set_modifier(cmd.modifier_source, cmd.stat_mods)
+			else:
+				changed = state.player.stats.remove_modifier(cmd.modifier_source)
+			if not changed:
+				return [SimEvent.new(SimEvent.Kind.COMMAND_FAILED, -1, "属性来源或修正无效")]
+			_sync_player_stats()
+			return [SimEvent.new(SimEvent.Kind.STATS_CHANGED, state.player.entity_id)]
 		Command.Kind.SPAWN_ENEMY:
 			var enemy: EnemyState = EnemyFactory.build(cmd.enemy_type, _next_entity_id, cmd.position, cmd.wave, cmd.danger_level)
 			if enemy == null:
@@ -55,6 +69,9 @@ func apply(cmd: Command) -> Array[SimEvent]:
 ## 只读查询敌人中心点，返回独立的升序ID列表，不包含玩家。
 func query_enemies(center: Vector2, radius: float) -> Array[int]:
 	return _enemy_index.query_circle(center, radius)
+
+func _sync_player_stats() -> void:
+	state.player.move_speed_bonus = state.player.stats.value(&"move_speed")
 
 func _move_enemies() -> void:
 	var maximum_radius: float = 0.0

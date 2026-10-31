@@ -1,0 +1,27 @@
+{
+  "scene": "res://app/dev/player_movement_lab.tscn",
+  "launch": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Godot project started in debug mode. Use get_debug_output to see output."
+      }
+    ]
+  },
+  "output": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"output\": [\n    \"Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\",\n    \"\",\n    \"OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"errors\": []\n}"
+      }
+    ]
+  },
+  "stop": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"message\": \"Godot project stopped\",\n  \"finalOutput\": [\n    \"Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\",\n    \"\",\n    \"OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"finalErrors\": []\n}"
+      }
+    ]
+  }
+}

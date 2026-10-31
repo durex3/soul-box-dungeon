@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_movement_initial_command_replace_remove_half_and_diagonal
+RK014 FAIL near expected=96.0 eps=0.02 actual=63.9990234375 msg=command modifier distance
+RK014 FAIL near expected=128.0 eps=0.02 actual=63.9990234375 msg=command cap distance
+RK014 FAIL near expected=80.0 eps=0.02 actual=63.9990234375 msg=replacement distance
+RK014 FAIL ok expected=true actual=false msg=half/diagonal magnitude preserved
+RK014 FAIL near expected=0.5 eps=0.0001 actual=0.0 msg=
+RK014 FAIL ok expected=true actual=false msg=half/diagonal magnitude preserved
+RK014 FAIL near expected=0.5 eps=0.0001 actual=0.0 msg=
+RK014_PROBE: failed
