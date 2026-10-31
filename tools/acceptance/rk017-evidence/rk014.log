@@ -1,0 +1,68 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_01_defaults_exact_keys_units_and_isolation
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_02_all_caps_floors_and_uncapped_values
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_03_glass_from_relic_table_fixed_health_and_removal
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_03_health_floor_and_nonnegative_factors_recover_raw_sources
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_04_raw_sum_then_clamp_and_source_restoration
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_05_invalid_input_is_atomic_and_extras_rejected
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_05_replace_remove_deep_copy_and_deterministic_order
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_events_failures_and_enemy_identity_index_rng_unchanged
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_initial_compatibility_reserved_source_and_independent_runs
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_movement_initial_command_replace_remove_half_and_diagonal
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_replay_mixed_source_histories_and_input
+RK014 18-field defaults {"max_hp":100.0,"hp_regen":0.0,"lifesteal":0.0,"armor":0.0,"dodge":0.0,"damage":0.0,"melee_damage":0.0,"ranged_damage":0.0,"elemental_damage":0.0,"attack_speed":0.0,"crit_chance":0.05,"area":0.0,"move_speed":0.0,"range":0.0,"pickup_range":2.0,"luck":0.0,"income":0.0,"max_energy":200.0}
+RK014 two glass health=56.25 damage=0.6
+RK014 flat20 before glass health=67.5
+RK014 removed glass_a health=90.0
+RK014 removed glass_b health=120.0
+RK014 removed flat health=100.0
+RK014 movement initial=0.0 steps=60 distance=63.9990234375
+RK014 movement initial=0.5 steps=60 distance=95.99853515625
+RK014 command kind=3 player_id=0 reason=""
+RK014 movement command+50% steps=60 distance=95.99853515625
+RK014 movement capped steps=60 distance=128.001708984375 mirror=1.0
+RK014_PROBE: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: StatBlock.value 未知属性: max_hp_pct
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] value (res://sim/combat/stat_block.gd:39)
+       [1] _initialize (/Users/liugelong/Desktop/soul-box-dungeon/tools/acceptance/rk014_probe.gd:11)
+ERROR: StatBlock.value 未知属性: unknown
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] value (res://sim/combat/stat_block.gd:39)
+       [1] _initialize (/Users/liugelong/Desktop/soul-box-dungeon/tools/acceptance/rk014_probe.gd:12)
+RK014_QUERY: passed
+RK014 caught additive_health: two glass health
+RK014 caught no_health_floor: ten glass minimum health
+RK014 caught incremental_clamped_cache: raw sum 0.8+0.8-0.9
+RK014 caught stale_speed_mirror: command modifier distance
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_01_defaults_exact_keys_units_and_isolation
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_02_all_caps_floors_and_uncapped_values
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_03_glass_from_relic_table_fixed_health_and_removal
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_03_health_floor_and_nonnegative_factors_recover_raw_sources
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_04_raw_sum_then_clamp_and_source_restoration
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_05_invalid_input_is_atomic_and_extras_rejected
+RK014 RUN res://tests/sim/combat/test_stat_block.gd::test_05_replace_remove_deep_copy_and_deterministic_order
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_events_failures_and_enemy_identity_index_rng_unchanged
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_initial_compatibility_reserved_source_and_independent_runs
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_movement_initial_command_replace_remove_half_and_diagonal
+RK014 RUN res://tests/sim/combat/test_stat_sim.gd::test_06_replay_mixed_source_histories_and_input
+RK014 18-field defaults {"max_hp":100.0,"hp_regen":0.0,"lifesteal":0.0,"armor":0.0,"dodge":0.0,"damage":0.0,"melee_damage":0.0,"ranged_damage":0.0,"elemental_damage":0.0,"attack_speed":0.0,"crit_chance":0.05,"area":0.0,"move_speed":0.0,"range":0.0,"pickup_range":2.0,"luck":0.0,"income":0.0,"max_energy":200.0}
+RK014 two glass health=56.25 damage=0.6
+RK014 flat20 before glass health=67.5
+RK014 removed glass_a health=90.0
+RK014 removed glass_b health=120.0
+RK014 removed flat health=100.0
+RK014 movement initial=0.0 steps=60 distance=63.9990234375
+RK014 movement initial=0.5 steps=60 distance=95.99853515625
+RK014 command kind=3 player_id=0 reason=""
+RK014 movement command+50% steps=60 distance=95.99853515625
+RK014 movement capped steps=60 distance=128.001708984375 mirror=1.0
+RK014_PROBE: passed
+RK014: passed

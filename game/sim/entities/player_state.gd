@@ -10,3 +10,4 @@ var move_speed_bonus: float = 0.0
 var character_id: StringName = &"knight"
 # 外部只能查询；生产表现层不得对容器set/remove来源。
 var stats: StatBlock = StatBlock.new()
+var weapon: WeaponState = WeaponState.new()

@@ -1,0 +1,78 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK017 RUN res://tests/sim/combat/test_weapon_fire.gd::test_04_shared_cooldown_switch_and_reequip_preserve_time
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.60833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.59166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.575 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.55833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.54166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.525 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.50833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.49166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.475 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.45833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.44166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.425 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.40833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.39166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.375 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.35833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.34166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.325 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.30833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.29166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.275 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.25833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.24166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.225 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.20833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.19166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.175 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.15833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.14166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.125 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.10833333333333 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.09166666666667 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.075 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.05833333333333 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.04166666666667 eps=0.000000001 actual=0.5 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.025 eps=0.000000001 actual=0.625 msg=
+RK017 FAIL eq expected=0 actual=1 msg=switch cannot reset shared positive cooldown
+RK017 FAIL near expected=0.00833333333333 eps=0.000000001 actual=0.5 msg=
+RK017_LOGIC: failed

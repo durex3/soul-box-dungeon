@@ -63,3 +63,18 @@ move_down={
 "deadzone": 0.2,
 "events": [Object(InputEventKey,"physical_keycode":83), Object(InputEventJoypadMotion,"device":-1,"axis":1,"axis_value":1.0)]
 }
+
+fire={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"button_index":1)]
+}
+
+weapon_next={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"physical_keycode":81), Object(InputEventMouseButton,"button_index":4)]
+}
+
+weapon_previous={
+"deadzone": 0.5,
+"events": [Object(InputEventMouseButton,"button_index":5)]
+}

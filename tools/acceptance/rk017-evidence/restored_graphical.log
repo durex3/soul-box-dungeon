@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK017 cache render_frame=13 samples=[(1, 1), (0, 0), (0, 0)] steps=3
+RK017 live HOLD steps=62 counts=[1, 1] shot_frames=[1, 39]
+RK017 live TOGGLE steps=62 counts=[2, 0] shot_frames=[1, 39]
+RK017 coordinates {"aim_world":"(928.0, 522.0)","canvas_inverse":"[X: (1.0, 0.0), Y: (0.0, 1.0), O: (480.0, 270.0)]","direction":"(0.871576, 0.490261)","logical":"(640, 360)","native_event":"(448.0, 252.0)","origin":"(640.0, 360.0)","viewport_mouse":"(448.0, 252.0)","window":"(640, 360)"}
+RK017 coordinates {"aim_world":"(1056.0, 594.0)","canvas_inverse":"[X: (1.0, 0.0), Y: (0.0, 1.0), O: (160.0, 90.0)]","direction":"(0.871576, 0.490261)","logical":"(1280, 720)","native_event":"(896.0, 504.0)","origin":"(640.0, 360.0)","viewport_mouse":"(896.0, 504.0)","window":"(1280, 720)"}
+RK017 coordinates {"aim_world":"(928.0, 522.0)","canvas_inverse":"[X: (1.0, 0.0), Y: (0.0, 1.0), O: (480.0, 270.0)]","direction":"(0.871576, 0.490261)","logical":"(640, 360)","native_event":"(896.0, 504.0)","origin":"(640.0, 360.0)","viewport_mouse":"(448.0, 252.0)","window":"(1280, 720)"}
+RK017_GRAPHICAL: passed
