@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"output\": [\n    \"Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org\",\n    \"\",\n    \"OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"errors\": []\n}"
+    }
+  ]
+}

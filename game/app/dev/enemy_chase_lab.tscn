@@ -1,0 +1,4 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://app/dev/enemy_chase_lab.gd" id="1"]
+[node name="EnemyChaseLab" type="Node2D"]
+script = ExtResource("1")

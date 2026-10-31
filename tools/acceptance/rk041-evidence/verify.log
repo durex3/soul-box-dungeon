@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK041 metrics iterations=8 count=200 steps=600 min=14.775475 p5=14.801676 median=15.326491 below14=0 mean_us=11438.75 max_us=18819 total_ms=6947.03
+RK041 coincident { "min": 15.9999761581421, "p5": 15.9999761581421, "median": 15.9999761581421, "below14": 0 }
+RK041_LOGIC: passed
+RK041 caught wave: near expected=
+RK041 caught no_separation: 200 density minimum >=8
+RK041 caught stale_index: cross bucket final index exact
+RK041 caught coincident: three coincident resolve
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK041 metrics iterations=8 count=200 steps=600 min=14.775475 p5=14.801676 median=15.326491 below14=0 mean_us=11477.97 max_us=27365 total_ms=6970.32
+RK041 coincident { "min": 15.9999761581421, "p5": 15.9999761581421, "median": 15.9999761581421, "below14": 0 }
+RK041_LOGIC: passed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 88 - Compatibility - Using Device: Apple - Apple M1
+
+RK041 graphic final steps=629 { "min": 14.8929166793823, "p5": 14.9498205184937, "median": 15.2935814857483, "below14": 0 }
+RK041_GRAPHICAL: passed
+RK041: passed
