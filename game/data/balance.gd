@@ -54,3 +54,7 @@ const XP_BASE: float = 10.0
 const XP_PER_LEVEL: float = 8.0
 const XP_PER_LEVEL_SQ: float = 0.5
 const UPGRADE_QUALITY_BASE: Array[float] = [0.70, 0.22, 0.07, 0.01]
+
+# GDD 14：危险1级起一次性生效，2—5级不再次叠乘。
+const DANGER_ENEMY_HP_MULT: float = 1.15
+const DANGER_ENEMY_DAMAGE_MULT: float = 1.10

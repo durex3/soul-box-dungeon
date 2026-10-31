@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK041 density 200/600 iterations=0 min=0.000000 p5=0.000000 median=0.000000 below14=200
+RK041 FAIL ok expected=true actual=false msg=200 density minimum >=8
+RK041 FAIL ok expected=true actual=false msg=200 density at least190 >=14
+RK041_LOGIC: failed

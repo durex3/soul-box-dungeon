@@ -1,0 +1,5 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+RK041 metrics iterations=8 count=200 steps=600 min=14.775475 p5=14.801676 median=15.326491 below14=0 mean_us=11477.97 max_us=27365 total_ms=6970.32
+RK041 coincident { "min": 15.9999761581421, "p5": 15.9999761581421, "median": 15.9999761581421, "below14": 0 }
+RK041_LOGIC: passed
